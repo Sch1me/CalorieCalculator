@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="blue">#274CD6</color>
+    <color name="gray">#8B8686</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="add_waterBtn">Add Water</string>
+    <string name="app_name">Calorie Calculator</string>
+    <string name="foodBtn">Food</string>
+    <string name="foodHeadingTxt">FOOD</string>
+    <string name="gcm_defaultSenderId" translatable="false">547817927692</string>
+    <string name="google_api_key" translatable="false">AIzaSyDEVa8ccN_Hqdc2U4c7H_roHlWlZOyjgSM</string>
+    <string name="google_app_id" translatable="false">1:547817927692:android:25379a9dd0f05dd736aa29</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDEVa8ccN_Hqdc2U4c7H_roHlWlZOyjgSM</string>
+    <string name="google_storage_bucket" translatable="false">caloriecalculator2-2cb5c.appspot.com</string>
+    <string name="pocetnaNaslovTxt">HOME</string>
+    <string name="profileBtn">Profile</string>
+    <string name="profileHeadingTxt">PROFILE</string>
+    <string name="progress_tabTxt">Progress Tab</string>
+    <string name="project_id" translatable="false">caloriecalculator2-2cb5c</string>
+    <string name="waterHeadingTxt">WATER</string>
+    <style name="Base.Theme.CalorieCalculator2" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.CalorieCalculator2" parent="Base.Theme.CalorieCalculator2"/>
+</resources>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/profileGore"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/blue"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profileHeadingTxt"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardViewShow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="150dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/weightTxtShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="150dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Weight" />
+            <TextView
+                android:id="@+id/calorieGoalTxtShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Calorie Goal" />
+            <TextView
+                android:id="@+id/waterGoalTxtShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="WaterGoal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="260dp"
+            >
+
+            <TextView
+                android:id="@+id/weightTxtNumShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="150dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="" />
+            <TextView
+                android:id="@+id/calorieGoalTxtNumShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="110dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="" />
+            <TextView
+                android:id="@+id/waterGoalTxtNumShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginTop="108dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardViewChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/profilePod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileGore">
+
+        <LinearLayout
+            android:id="@+id/lijeviTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/weightTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:text="Weight"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/calorieGoalTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="50dp"
+                android:text="Calorie Goal"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/waterGoalTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="50dp"
+                android:text="Water Goal"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/desniTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="250dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/weightNumTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="Weight"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/calorieGoalNumTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="Calorie goal"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/waterGoalNumTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="water goal"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <Button
+        android:id="@+id/changeStatsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Stats"
+        app:layout_constraintBottom_toTopOf="@id/profilePod"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp" />
+    <Button
+        android:id="@+id/changeStatsBtnFAKE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Stats"
+        app:layout_constraintBottom_toTopOf="@id/profilePod"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/profilePod"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/blue"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/waterButtonIMG"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="35dp"
+            app:srcCompat="@drawable/water_logo2" />
+
+        <ImageView
+            android:id="@+id/foodButtonIMG"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginStart="35dp"
+            android:text="@string/foodBtn"
+            app:srcCompat="@drawable/food_logo">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/homeButtonIMG"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/home_logo"
+            android:layout_marginEnd="35dp"
+            android:text="@string/profileBtn"
+            >
+
+        </ImageView>
+
+        
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

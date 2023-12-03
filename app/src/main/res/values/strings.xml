@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calorie Calculator</string>
+    <string name="pocetnaNaslovTxt">HOME</string>
+    <string name="foodBtn">Food</string>
+    <string name="profileBtn">Profile</string>
+    <string name="profileHeadingTxt">PROFILE</string>
+    <string name="waterHeadingTxt">WATER</string>
+    <string name="add_waterBtn">Add Water</string>
+    <string name="progress_tabTxt">Progress Tab</string>
+    <string name="foodHeadingTxt">FOOD</string>
+</resources>
