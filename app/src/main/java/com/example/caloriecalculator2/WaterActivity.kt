@@ -46,7 +46,7 @@ class WaterActivity : AppCompatActivity() {
             intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
         }
-
+//test test test
         binding.homeButtonIMG.setOnClickListener {
 
             intent = Intent(this,PocetnaActivity::class.java)
