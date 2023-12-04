@@ -12,12 +12,13 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.getValue
 import java.lang.Exception
 
 class WaterActivity : AppCompatActivity() {
     lateinit var binding: ActivityWaterBinding
-    var waterAdded : Int = 0
-    var waterInDatabase : Int = 0
+    var waterAdded : String= ""
+    var waterInLiters : Int = 0
     var totalWaterAdded : Int = 0
         private val dataBase: DatabaseReference =
         FirebaseDatabase.getInstance("https://caloriecalculator2-2cb5c-default-rtdb.europe-west1.firebasedatabase.app/").getReference("Water")
@@ -31,6 +32,24 @@ class WaterActivity : AppCompatActivity() {
         binding.addWaterCardView.visibility = View.GONE
 
 
+//postavlja pocetni tekst
+        binding.hydrationText.text = "Current water intake: " + totalWaterAdded.toString() + " dcl"
+
+
+
+//ucitava podatke iz baze podataka
+        dataBase.addValueEventListener(object :ValueEventListener{
+            override fun onDataChange(snapshot: DataSnapshot) {
+                val waterInDataBase : String = snapshot.child("CurrentWater").getValue().toString()
+                binding.hydrationText.text = "Current water intake: " + waterInDataBase + " dcl"
+                totalWaterAdded = waterInDataBase.toInt()
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+
+        })
 
 //buttoni za prebacivanje aktivnosti
 
@@ -46,7 +65,6 @@ class WaterActivity : AppCompatActivity() {
             intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
         }
-//test test test
         binding.homeButtonIMG.setOnClickListener {
 
             intent = Intent(this,PocetnaActivity::class.java)
@@ -59,35 +77,36 @@ class WaterActivity : AppCompatActivity() {
 
             binding.addWaterCardView.visibility = View.VISIBLE
 
-    //cita podatke iz baze podataka
-            dataBase.addValueEventListener(object :ValueEventListener{
-                override fun onDataChange(snapshot: DataSnapshot) {
-                    try {
-                //        waterInDatabase = snapshot.child("CurrentWater").getValue()
-
-                        binding.hydrationText.text = totalWaterAdded.toString()
-                    }catch (_:Exception){}
-                }
-
-                override fun onCancelled(error: DatabaseError) {
-                    Toast.makeText(this@WaterActivity,"Failed to load data", Toast.LENGTH_SHORT).show()
-                }
-
-            })
         }
 
+//ADD BUTTON
         binding.addButton.setOnClickListener {
-           // waterAdded = binding.ammountOfWaterTxt as Int
-            dataBase.child("CurrentWater").setValue(5)
-            totalWaterAdded = waterAdded + waterInDatabase
-            binding.hydrationText.text = totalWaterAdded.toString()
+            waterAdded = binding.ammountOfWaterTxt.text.toString()
+            if(waterAdded.isEmpty()){
+                Toast.makeText(this@WaterActivity, "You didn't drink anything :((", Toast.LENGTH_SHORT).show()
+                binding.addWaterCardView.visibility = View.GONE
+            }else {
+                totalWaterAdded += waterAdded.toInt()
+                waterInLiters = (totalWaterAdded / 10)
+                dataBase.child("CurrentWater").setValue(totalWaterAdded.toString())
+                binding.hydrationText.text =
+                    "Current water intake: " + totalWaterAdded.toString() + " dcl"
+                binding.ammountOfWaterTxt.text = null
+                binding.addWaterCardView.visibility = View.GONE
+            }
         }
 
+//button za resetiranje trenutnog unosa vode
 
-
-
-
-
+        binding.resetWaterIntakeBtn.setOnClickListener{
+            val oldWaterIntake : Int = totalWaterAdded
+            totalWaterAdded = 0
+            binding.hydrationText.text =
+                "Current water intake: " + totalWaterAdded.toString() + " dcl"
+            dataBase.child("CurrentWater").setValue(totalWaterAdded)
+            Toast.makeText(this@WaterActivity,"You just did a reset of your water intake!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@WaterActivity,"Your water intake was: " + oldWaterIntake + " dcl", Toast.LENGTH_SHORT).show()
+        }
 
     }
 }
