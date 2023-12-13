@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:2:1-41:12
+ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:2:1-44:12
 MERGED from [androidx.databinding:databinding-adapters:8.0.1] C:\Users\Šime\.gradle\caches\transforms-3\53ca4bb11b62fd8da0828e2ec844e474\transformed\databinding-adapters-8.0.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-ktx:8.0.1] C:\Users\Šime\.gradle\caches\transforms-3\2f96b9d919e53c2bc09e9998ed3a50fb\transformed\databinding-ktx-8.0.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-runtime:8.0.1] C:\Users\Šime\.gradle\caches\transforms-3\87618210e126b08fb671b0cae5afaa27\transformed\databinding-runtime-8.0.1\AndroidManifest.xml:2:1-7:12
@@ -61,27 +61,27 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Šime\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Šime\.gradle\caches\transforms-3\d86445472ee462743c69627591d6291c\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Šime\.gradle\caches\transforms-3\a8f276e3b56fde14263c4bad47eb809c\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Šime\.gradle\caches\transforms-3\0c2e926589a4b9c36941701bbde4af73\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
-INJECTED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:2:1-44:12
 	package
 		INJECTED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml
-		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:2:1-41:12
+		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:2:1-44:12
 		INJECTED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml
-		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:2:1-41:12
+		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:2:1-44:12
 		INJECTED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml
-		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:2:1-41:12
+		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:2:1-44:12
 		INJECTED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:5:5-39:19
+ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:5:5-42:19
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\Šime\.gradle\caches\transforms-3\b7f79563c3d58de156bf28c917308c1b\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\Šime\.gradle\caches\transforms-3\b7f79563c3d58de156bf28c917308c1b\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Šime\.gradle\caches\transforms-3\3937581b249a7ddfc0f8eab4894e8683\transformed\firebase-database-20.3.0\AndroidManifest.xml:25:5-36:19
@@ -134,52 +134,58 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Šime\.gradle\cach
 		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:13:9-56
 	android:dataExtractionRules
 		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:7:9-65
-activity#com.example.caloriecalculator2.ProgressActivity
+activity#com.example.caloriecalculator2.FoodDetailsActivity
 ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:15:9-17:40
 	android:exported
 		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:16:13-45
-activity#com.example.caloriecalculator2.FoodActivity
+		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:16:13-48
+activity#com.example.caloriecalculator2.ProgressActivity
 ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:18:9-20:40
 	android:exported
 		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:19:13-41
-activity#com.example.caloriecalculator2.WaterActivity
+		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:19:13-45
+activity#com.example.caloriecalculator2.FoodActivity
 ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:21:9-23:40
 	android:exported
 		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:23:13-37
 	android:name
-		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:22:13-42
-activity#com.example.caloriecalculator2.ProfileActivity
+		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:22:13-41
+activity#com.example.caloriecalculator2.WaterActivity
 ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:24:9-26:40
 	android:exported
 		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:25:13-44
-activity#com.example.caloriecalculator2.MainActivity
+		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:25:13-42
+activity#com.example.caloriecalculator2.ProfileActivity
 ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:27:9-29:40
 	android:exported
 		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:28:13-41
-activity#com.example.caloriecalculator2.PocetnaActivity
-ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:30:9-38:20
+		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:28:13-44
+activity#com.example.caloriecalculator2.MainActivity
+ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:30:9-32:40
 	android:exported
-		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:32:13-36
+		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:31:13-44
+		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:31:13-41
+activity#com.example.caloriecalculator2.PocetnaActivity
+ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:33:9-41:20
+	android:exported
+		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:35:13-36
+	android:name
+		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:34:13-44
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:33:13-37:29
+ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:36:13-40:29
 action#android.intent.action.MAIN
-ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:34:17-69
+ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:37:17-69
 	android:name
-		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:34:25-66
+		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:37:25-66
 category#android.intent.category.LAUNCHER
-ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:36:17-77
+ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:39:17-77
 	android:name
-		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:36:27-74
+		ADDED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml:39:27-74
 uses-sdk
 INJECTED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from G:\zavrsniRadApp\12223-main\CalorieCalculator2-master\CalorieCalculator2-master\app\src\main\AndroidManifest.xml

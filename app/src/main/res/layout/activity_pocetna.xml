@@ -30,9 +30,6 @@
 
 
 
-
-
-
     <LinearLayout
         android:id="@+id/waterFoodLayout"
         android:layout_width="match_parent"
@@ -85,7 +82,6 @@
 
 
 
-
     <LinearLayout
         android:id="@+id/bojaPod"
         android:layout_width="match_parent"
@@ -128,6 +124,8 @@
 
     </LinearLayout>
 
+
+
     <TextView
         android:id="@+id/quotesTxt"
         android:layout_width="300dp"
@@ -142,7 +140,6 @@
         android:textColor="@color/blue"
         android:textStyle="normal"
        />
-
 
 
 

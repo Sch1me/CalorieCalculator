@@ -20,12 +20,12 @@
         "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-41:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-merged_res-39:\\layout_food_item.xml.flat",
-        "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-41:\\layout\\food_item.xml"
-    },
-    {
         "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-merged_res-39:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-41:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-merged_res-39:\\layout_food_item.xml.flat",
+        "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-41:\\layout\\food_item.xml"
     },
     {
         "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-merged_res-39:\\mipmap-mdpi_ic_launcher_round.webp.flat",
@@ -56,12 +56,20 @@
         "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-41:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-merged_res-39:\\layout_activity_food_details.xml.flat",
+        "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-41:\\layout\\activity_food_details.xml"
+    },
+    {
         "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-merged_res-39:\\layout_activity_pocetna.xml.flat",
         "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-41:\\layout\\activity_pocetna.xml"
     },
     {
         "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-merged_res-39:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-41:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "com.example.caloriecalculator2.app-merged_res-39:/layout_activity_profile.xml.flat",
+        "source": "com.example.caloriecalculator2.app-main-41:/layout/activity_profile.xml"
     },
     {
         "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-merged_res-39:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
@@ -106,10 +114,6 @@
     {
         "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-merged_res-39:\\drawable_app_logo.png.flat",
         "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-41:\\drawable\\app_logo.png"
-    },
-    {
-        "merged": "com.example.caloriecalculator2.app-merged_res-39:/layout_activity_water.xml.flat",
-        "source": "com.example.caloriecalculator2.app-main-41:/layout/activity_water.xml"
     },
     {
         "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-merged_res-39:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",

@@ -25,10 +25,16 @@ public final class ActivityProfileBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final TextView CarbTxt;
+
+  @NonNull
   public final CardView CardViewChange;
 
   @NonNull
   public final CardView CardViewShow;
+
+  @NonNull
+  public final TextView ProteinTxt;
 
   @NonNull
   public final EditText calorieGoalNumTxt;
@@ -41,6 +47,15 @@ public final class ActivityProfileBinding implements ViewBinding {
 
   @NonNull
   public final TextView calorieGoalTxtShow;
+
+  @NonNull
+  public final EditText carbGoalNumTxt;
+
+  @NonNull
+  public final TextView carbGoalTxtShow;
+
+  @NonNull
+  public final TextView carbsTxtNumShow;
 
   @NonNull
   public final Button changeStatsBtn;
@@ -67,6 +82,15 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final LinearLayout profilePod;
 
   @NonNull
+  public final EditText proteinGoalNumTxt;
+
+  @NonNull
+  public final TextView proteinGoalTxtShow;
+
+  @NonNull
+  public final TextView proteinTxtNumShow;
+
+  @NonNull
   public final ImageView waterButtonIMG;
 
   @NonNull
@@ -81,38 +105,32 @@ public final class ActivityProfileBinding implements ViewBinding {
   @NonNull
   public final TextView waterGoalTxtShow;
 
-  @NonNull
-  public final EditText weightNumTxt;
-
-  @NonNull
-  public final TextView weightTxt;
-
-  @NonNull
-  public final TextView weightTxtNumShow;
-
-  @NonNull
-  public final TextView weightTxtShow;
-
-  private ActivityProfileBinding(@NonNull ConstraintLayout rootView,
+  private ActivityProfileBinding(@NonNull ConstraintLayout rootView, @NonNull TextView CarbTxt,
       @NonNull CardView CardViewChange, @NonNull CardView CardViewShow,
-      @NonNull EditText calorieGoalNumTxt, @NonNull TextView calorieGoalTxt,
-      @NonNull TextView calorieGoalTxtNumShow, @NonNull TextView calorieGoalTxtShow,
+      @NonNull TextView ProteinTxt, @NonNull EditText calorieGoalNumTxt,
+      @NonNull TextView calorieGoalTxt, @NonNull TextView calorieGoalTxtNumShow,
+      @NonNull TextView calorieGoalTxtShow, @NonNull EditText carbGoalNumTxt,
+      @NonNull TextView carbGoalTxtShow, @NonNull TextView carbsTxtNumShow,
       @NonNull Button changeStatsBtn, @NonNull Button changeStatsBtnFAKE,
       @NonNull LinearLayout desniTxt, @NonNull ImageView foodButtonIMG,
       @NonNull ImageView homeButtonIMG, @NonNull LinearLayout lijeviTxt,
       @NonNull LinearLayout profileGore, @NonNull LinearLayout profilePod,
-      @NonNull ImageView waterButtonIMG, @NonNull EditText waterGoalNumTxt,
-      @NonNull TextView waterGoalTxt, @NonNull TextView waterGoalTxtNumShow,
-      @NonNull TextView waterGoalTxtShow, @NonNull EditText weightNumTxt,
-      @NonNull TextView weightTxt, @NonNull TextView weightTxtNumShow,
-      @NonNull TextView weightTxtShow) {
+      @NonNull EditText proteinGoalNumTxt, @NonNull TextView proteinGoalTxtShow,
+      @NonNull TextView proteinTxtNumShow, @NonNull ImageView waterButtonIMG,
+      @NonNull EditText waterGoalNumTxt, @NonNull TextView waterGoalTxt,
+      @NonNull TextView waterGoalTxtNumShow, @NonNull TextView waterGoalTxtShow) {
     this.rootView = rootView;
+    this.CarbTxt = CarbTxt;
     this.CardViewChange = CardViewChange;
     this.CardViewShow = CardViewShow;
+    this.ProteinTxt = ProteinTxt;
     this.calorieGoalNumTxt = calorieGoalNumTxt;
     this.calorieGoalTxt = calorieGoalTxt;
     this.calorieGoalTxtNumShow = calorieGoalTxtNumShow;
     this.calorieGoalTxtShow = calorieGoalTxtShow;
+    this.carbGoalNumTxt = carbGoalNumTxt;
+    this.carbGoalTxtShow = carbGoalTxtShow;
+    this.carbsTxtNumShow = carbsTxtNumShow;
     this.changeStatsBtn = changeStatsBtn;
     this.changeStatsBtnFAKE = changeStatsBtnFAKE;
     this.desniTxt = desniTxt;
@@ -121,15 +139,14 @@ public final class ActivityProfileBinding implements ViewBinding {
     this.lijeviTxt = lijeviTxt;
     this.profileGore = profileGore;
     this.profilePod = profilePod;
+    this.proteinGoalNumTxt = proteinGoalNumTxt;
+    this.proteinGoalTxtShow = proteinGoalTxtShow;
+    this.proteinTxtNumShow = proteinTxtNumShow;
     this.waterButtonIMG = waterButtonIMG;
     this.waterGoalNumTxt = waterGoalNumTxt;
     this.waterGoalTxt = waterGoalTxt;
     this.waterGoalTxtNumShow = waterGoalTxtNumShow;
     this.waterGoalTxtShow = waterGoalTxtShow;
-    this.weightNumTxt = weightNumTxt;
-    this.weightTxt = weightTxt;
-    this.weightTxtNumShow = weightTxtNumShow;
-    this.weightTxtShow = weightTxtShow;
   }
 
   @Override
@@ -159,6 +176,12 @@ public final class ActivityProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.CarbTxt;
+      TextView CarbTxt = ViewBindings.findChildViewById(rootView, id);
+      if (CarbTxt == null) {
+        break missingId;
+      }
+
       id = R.id.CardViewChange;
       CardView CardViewChange = ViewBindings.findChildViewById(rootView, id);
       if (CardViewChange == null) {
@@ -168,6 +191,12 @@ public final class ActivityProfileBinding implements ViewBinding {
       id = R.id.CardViewShow;
       CardView CardViewShow = ViewBindings.findChildViewById(rootView, id);
       if (CardViewShow == null) {
+        break missingId;
+      }
+
+      id = R.id.ProteinTxt;
+      TextView ProteinTxt = ViewBindings.findChildViewById(rootView, id);
+      if (ProteinTxt == null) {
         break missingId;
       }
 
@@ -192,6 +221,24 @@ public final class ActivityProfileBinding implements ViewBinding {
       id = R.id.calorieGoalTxtShow;
       TextView calorieGoalTxtShow = ViewBindings.findChildViewById(rootView, id);
       if (calorieGoalTxtShow == null) {
+        break missingId;
+      }
+
+      id = R.id.carbGoalNumTxt;
+      EditText carbGoalNumTxt = ViewBindings.findChildViewById(rootView, id);
+      if (carbGoalNumTxt == null) {
+        break missingId;
+      }
+
+      id = R.id.carbGoalTxtShow;
+      TextView carbGoalTxtShow = ViewBindings.findChildViewById(rootView, id);
+      if (carbGoalTxtShow == null) {
+        break missingId;
+      }
+
+      id = R.id.carbsTxtNumShow;
+      TextView carbsTxtNumShow = ViewBindings.findChildViewById(rootView, id);
+      if (carbsTxtNumShow == null) {
         break missingId;
       }
 
@@ -243,6 +290,24 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.proteinGoalNumTxt;
+      EditText proteinGoalNumTxt = ViewBindings.findChildViewById(rootView, id);
+      if (proteinGoalNumTxt == null) {
+        break missingId;
+      }
+
+      id = R.id.proteinGoalTxtShow;
+      TextView proteinGoalTxtShow = ViewBindings.findChildViewById(rootView, id);
+      if (proteinGoalTxtShow == null) {
+        break missingId;
+      }
+
+      id = R.id.proteinTxtNumShow;
+      TextView proteinTxtNumShow = ViewBindings.findChildViewById(rootView, id);
+      if (proteinTxtNumShow == null) {
+        break missingId;
+      }
+
       id = R.id.waterButtonIMG;
       ImageView waterButtonIMG = ViewBindings.findChildViewById(rootView, id);
       if (waterButtonIMG == null) {
@@ -273,36 +338,12 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.weightNumTxt;
-      EditText weightNumTxt = ViewBindings.findChildViewById(rootView, id);
-      if (weightNumTxt == null) {
-        break missingId;
-      }
-
-      id = R.id.weightTxt;
-      TextView weightTxt = ViewBindings.findChildViewById(rootView, id);
-      if (weightTxt == null) {
-        break missingId;
-      }
-
-      id = R.id.weightTxtNumShow;
-      TextView weightTxtNumShow = ViewBindings.findChildViewById(rootView, id);
-      if (weightTxtNumShow == null) {
-        break missingId;
-      }
-
-      id = R.id.weightTxtShow;
-      TextView weightTxtShow = ViewBindings.findChildViewById(rootView, id);
-      if (weightTxtShow == null) {
-        break missingId;
-      }
-
-      return new ActivityProfileBinding((ConstraintLayout) rootView, CardViewChange, CardViewShow,
-          calorieGoalNumTxt, calorieGoalTxt, calorieGoalTxtNumShow, calorieGoalTxtShow,
-          changeStatsBtn, changeStatsBtnFAKE, desniTxt, foodButtonIMG, homeButtonIMG, lijeviTxt,
-          profileGore, profilePod, waterButtonIMG, waterGoalNumTxt, waterGoalTxt,
-          waterGoalTxtNumShow, waterGoalTxtShow, weightNumTxt, weightTxt, weightTxtNumShow,
-          weightTxtShow);
+      return new ActivityProfileBinding((ConstraintLayout) rootView, CarbTxt, CardViewChange,
+          CardViewShow, ProteinTxt, calorieGoalNumTxt, calorieGoalTxt, calorieGoalTxtNumShow,
+          calorieGoalTxtShow, carbGoalNumTxt, carbGoalTxtShow, carbsTxtNumShow, changeStatsBtn,
+          changeStatsBtnFAKE, desniTxt, foodButtonIMG, homeButtonIMG, lijeviTxt, profileGore,
+          profilePod, proteinGoalNumTxt, proteinGoalTxtShow, proteinTxtNumShow, waterButtonIMG,
+          waterGoalNumTxt, waterGoalTxt, waterGoalTxtNumShow, waterGoalTxtShow);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -16,7 +16,7 @@ class ProgressActivity : AppCompatActivity() {
         binding = ActivityProgressBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
+/*
         //popunice samo ako sam dodao promjene u profile
     if(ProfileActivity.weightArrayList.isNotEmpty()){
 
@@ -65,6 +65,6 @@ class ProgressActivity : AppCompatActivity() {
 
         }
 
-
+*/
     }
 }

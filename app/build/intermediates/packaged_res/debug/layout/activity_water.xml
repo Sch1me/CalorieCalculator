@@ -68,23 +68,7 @@
         android:textSize="30sp"
         android:textStyle="italic"
         android:textColor="@color/blue"
-        android:inputType="number"
         android:gravity="start"
-        />
-    <TextView
-        android:id="@+id/hydrationTextPomocni"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="liters"
-        app:layout_constraintTop_toBottomOf="@id/upaliObavijesti"
-        app:layout_constraintBottom_toTopOf="@id/waterPod"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:textSize="30sp"
-        android:textStyle="italic"
-        android:textColor="@color/blue"
-        android:layout_marginStart="110dp"
-        android:inputType="text"
         />
 
     <androidx.cardview.widget.CardView
@@ -110,7 +94,7 @@
                 android:layout_height="wrap_content"
                 android:ems="13"
                 android:gravity="center"
-                android:hint="Ammount of water"
+                android:hint="@string/AddingWaterHintText"
                 android:inputType="number"
                 android:layout_marginTop="5dp"
                 android:textSize="20sp"
@@ -124,6 +108,7 @@
                 android:textSize="25sp"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="5dp"/>
+
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
@@ -169,8 +154,15 @@
 
     </LinearLayout>
 
-
-
+    <Button
+        android:id="@+id/resetWaterIntakeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_water_intake_Btn_Text"
+        app:layout_constraintBottom_toTopOf="@+id/waterPod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hydrationText" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

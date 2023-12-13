@@ -4,6 +4,8 @@
     <color name="blue">#274CD6</color>
     <color name="gray">#8B8686</color>
     <color name="white">#FFFFFFFF</color>
+    <string name="AddingWaterHintText">Ammount of water you \n drank in dcl</string>
+    <string name="addBtnText">Add</string>
     <string name="add_waterBtn">Add Water</string>
     <string name="app_name">Calorie Calculator</string>
     <string name="foodBtn">Food</string>
@@ -18,6 +20,10 @@
     <string name="profileHeadingTxt">PROFILE</string>
     <string name="progress_tabTxt">Progress Tab</string>
     <string name="project_id" translatable="false">caloriecalculator2-2cb5c</string>
+    <string name="quick_add_ProteinTxt">Enter Protein</string>
+    <string name="quick_add_caloriesTxt">Enter Calories</string>
+    <string name="quick_add_carbsTxt">Add Carbs</string>
+    <string name="reset_water_intake_Btn_Text">Reset Water Intake</string>
     <string name="waterHeadingTxt">WATER</string>
     <style name="Base.Theme.CalorieCalculator2" parent="Theme.Material3.DayNight.NoActionBar">
         

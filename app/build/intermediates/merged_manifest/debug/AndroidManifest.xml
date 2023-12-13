@@ -33,6 +33,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.CalorieCalculator2" >
         <activity
+            android:name="com.example.caloriecalculator2.FoodDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.caloriecalculator2.ProgressActivity"
             android:exported="false" />
         <activity

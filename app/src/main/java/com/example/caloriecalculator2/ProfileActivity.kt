@@ -21,13 +21,14 @@ class ProfileActivity : AppCompatActivity() {
         FirebaseDatabase.getInstance("https://caloriecalculator2-2cb5c-default-rtdb.europe-west1.firebasedatabase.app/").getReference("Goals").child("WaterGoal")
     private val dataBase2: DatabaseReference =
         FirebaseDatabase.getInstance("https://caloriecalculator2-2cb5c-default-rtdb.europe-west1.firebasedatabase.app/").getReference("Goals").child("CalorieGoal")
-    private val dataBase3: DatabaseReference =
-        FirebaseDatabase.getInstance("https://caloriecalculator2-2cb5c-default-rtdb.europe-west1.firebasedatabase.app/").getReference("Weight").child("CurrentWeight")
+    private val dataBase: DatabaseReference =
+        FirebaseDatabase.getInstance("https://caloriecalculator2-2cb5c-default-rtdb.europe-west1.firebasedatabase.app/").getReference("Goals")
 
     var changeStats : Boolean = false //ako je false, onda se ne prikazuje
 
     companion object {
-        var weightArrayList = ArrayList<String>()
+        var proteinArrayList = ArrayList<String>()
+        var carbsArrayList = ArrayList<String>()
         var waterArrayList = ArrayList<String>()
         var caloriesArrayList = ArrayList<String>()
         var waterGoal = String()
@@ -42,39 +43,46 @@ class ProfileActivity : AppCompatActivity() {
 
         //values za text koji se sam mjenja
         val textViewCalorie = binding.calorieGoalNumTxt
-        val textViewWeight = binding.weightNumTxt
+        val textViewProtein = binding.proteinGoalNumTxt
         val textViewWater = binding.waterGoalNumTxt
+        val textViewCarb = binding.carbGoalNumTxt
         //values za text koji user mijenja
         val textViewCalorieShow = binding.calorieGoalTxtNumShow
-        val textViewWeightShow = binding.weightTxtNumShow
+        val textViewProteinShow = binding.proteinTxtNumShow
+        val textViewCarbsShow = binding.carbsTxtNumShow
         val textViewWaterShow = binding.waterGoalTxtNumShow
 
         //kemijanje
-        if(waterArrayList.isEmpty() || weightArrayList.isEmpty() || caloriesArrayList.isEmpty()){
+        if(waterArrayList.isEmpty() || proteinArrayList.isEmpty() || carbsArrayList.isEmpty() ||caloriesArrayList.isEmpty()){
+
 
             textViewCalorieShow.text = " kcal"
             textViewWaterShow.text = " liter"
-            textViewWeightShow.text = " kg"
+            textViewProteinShow.text = " grams"
+            textViewCarbsShow.text = " grams"
+
 
         }else{
             textViewCalorieShow.text = caloriesArrayList.last().toString() + " kcal"
             textViewWaterShow.text = waterArrayList.last().toString() + " liter"
-            textViewWeightShow.text = weightArrayList.last().toString() + " kg"
+            textViewProteinShow.text = proteinArrayList.last().toString() + " grams"
+            textViewCarbsShow.text = carbsArrayList.last().toString() + " grams"
         }
 
-
-//funkcionira sa bazom podataka za KILAZU
-        dataBase3.addValueEventListener(object :ValueEventListener{
+//funkcionira s bazom za proteine
+        dataBase.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 try {
-                    val currentWeight : String = snapshot.child("CurrentWeight").getValue().toString()
-                    binding.weightTxtNumShow.text = currentWeight + "kg"
+                    val currentProteinGoal : String = snapshot.child("ProteinGoal").getValue().toString()
+                    binding.proteinTxtNumShow.text = currentProteinGoal + "grams"
+                    val currentCarbsGoal : String = snapshot.child("CarbGoal").getValue().toString()
+                    binding.carbsTxtNumShow.text = currentCarbsGoal + "grams"
+                    
                 }catch (_:Exception){}
-
             }
 
             override fun onCancelled(error: DatabaseError) {
-                Toast.makeText(this@ProfileActivity,"Failed with weight",Toast.LENGTH_SHORT).show()
+                TODO("Not yet implemented")
             }
 
         })
@@ -159,14 +167,18 @@ class ProfileActivity : AppCompatActivity() {
 
                         textViewCalorieShow.text = textViewCalorie.text.toString() + " kcal"
                         textViewWaterShow.text = textViewWater.text.toString() + " liter"
-                        textViewWeightShow.text = textViewWeight.text.toString() + " kg"
+                        textViewProteinShow.text = textViewProtein.text.toString() + " grams"
+                        textViewCarbsShow.text = textViewCarb.text.toString() + " grams"
 
                         waterArrayList.add(textViewWater.text.toString())
-                        weightArrayList.add(textViewWeight.text.toString())
+                        proteinArrayList.add(textViewProtein.text.toString())
                         caloriesArrayList.add(textViewCalorie.text.toString())
+                        carbsArrayList.add(textViewCarb.text.toString())
                         dataBase1.child("WaterGoal").setValue(waterArrayList.last())            //mijenja vrijednost unutar baze podataka
                         dataBase2.child("CalorieGoal").setValue(caloriesArrayList.last())       //  -----||----
-                        dataBase3.child("CurrentWeight").setValue(weightArrayList.last())       //   ------||----
+                        dataBase.child("ProteinGoal").setValue(proteinArrayList.last())       //   ------||----
+                        dataBase.child("CarbGoal").setValue(carbsArrayList.last())
+
 
                         //gasi ovaj za promjeniti i pali normalan
 

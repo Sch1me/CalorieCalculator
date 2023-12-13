@@ -38,7 +38,6 @@ class PocetnaActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-
 //ucitava podatke o popijenoj vodi
         dataBaseWater.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -85,7 +84,6 @@ class PocetnaActivity : AppCompatActivity() {
 
                     binding.calorieNumberTextView.text ="trenutno"+"/" + calorieGoal + "kcal"
 
-
                 }catch (_: Exception){ }
                 }
 
@@ -98,7 +96,7 @@ class PocetnaActivity : AppCompatActivity() {
             override fun onDataChange(snapshot: DataSnapshot) {
                 try {
                     waterGoal = snapshot.child("WaterGoal").getValue().toString()
-                    binding.waterConsumedTextView.text = consumedWater + " / " + waterGoal+"0" + "dcl"
+                    binding.waterConsumedTextView.text = consumedWater + " / " + waterGoal+"0" + " dcl"
                 }catch (_:Exception){}
             }
 
@@ -108,7 +106,6 @@ class PocetnaActivity : AppCompatActivity() {
 
 
         })
-
 
 
 //gumbovi za slajdanje dalje

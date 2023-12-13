@@ -30,9 +30,6 @@
 
 
 
-
-
-
     <LinearLayout
         android:id="@+id/waterFoodLayout"
         android:layout_width="match_parent"
@@ -43,25 +40,45 @@
         android:gravity="center">
 
         <TextView
+            android:id="@+id/calorieIntakeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Current calorie intake:"
+            android:textSize="30sp"
+            android:textColor="@color/blue"
+            />
+
+        <TextView
             android:id="@+id/calorieNumberTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0kcal / 3000kcal"
             android:textSize="30sp"
             android:textColor="@color/blue"
+            android:layout_marginTop="5dp"
             />
 
         <TextView
-            android:id="@+id/waterNumberTextView"
+            android:id="@+id/waterIntakeTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:text="Current water intake:"
+            android:textSize="30sp"
+            android:textColor="@color/blue"
+            />
+
+        <TextView
+            android:id="@+id/waterConsumedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:text="popijeno vode: "
             android:textSize="30sp"
             android:textColor="@color/blue"
             />
     </LinearLayout>
-
 
 
 
@@ -107,6 +124,8 @@
 
     </LinearLayout>
 
+
+
     <TextView
         android:id="@+id/quotesTxt"
         android:layout_width="300dp"
@@ -121,7 +140,6 @@
         android:textColor="@color/blue"
         android:textStyle="normal"
        />
-
 
 
 

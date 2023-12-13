@@ -47,10 +47,10 @@ public final class ActivityWaterBinding implements ViewBinding {
   public final TextView hydrationText;
 
   @NonNull
-  public final TextView hydrationTextPomocni;
+  public final ImageView profileButtonIMG;
 
   @NonNull
-  public final ImageView profileButtonIMG;
+  public final Button resetWaterIntakeBtn;
 
   @NonNull
   public final Switch upaliObavijesti;
@@ -65,7 +65,7 @@ public final class ActivityWaterBinding implements ViewBinding {
       @NonNull Button addWaterButton, @NonNull CardView addWaterCardView,
       @NonNull EditText ammountOfWaterTxt, @NonNull ImageView foodButtonIMG,
       @NonNull ImageView homeButtonIMG, @NonNull TextView hydrationText,
-      @NonNull TextView hydrationTextPomocni, @NonNull ImageView profileButtonIMG,
+      @NonNull ImageView profileButtonIMG, @NonNull Button resetWaterIntakeBtn,
       @NonNull Switch upaliObavijesti, @NonNull LinearLayout waterGore,
       @NonNull LinearLayout waterPod) {
     this.rootView = rootView;
@@ -76,8 +76,8 @@ public final class ActivityWaterBinding implements ViewBinding {
     this.foodButtonIMG = foodButtonIMG;
     this.homeButtonIMG = homeButtonIMG;
     this.hydrationText = hydrationText;
-    this.hydrationTextPomocni = hydrationTextPomocni;
     this.profileButtonIMG = profileButtonIMG;
+    this.resetWaterIntakeBtn = resetWaterIntakeBtn;
     this.upaliObavijesti = upaliObavijesti;
     this.waterGore = waterGore;
     this.waterPod = waterPod;
@@ -152,15 +152,15 @@ public final class ActivityWaterBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.hydrationTextPomocni;
-      TextView hydrationTextPomocni = ViewBindings.findChildViewById(rootView, id);
-      if (hydrationTextPomocni == null) {
-        break missingId;
-      }
-
       id = R.id.profileButtonIMG;
       ImageView profileButtonIMG = ViewBindings.findChildViewById(rootView, id);
       if (profileButtonIMG == null) {
+        break missingId;
+      }
+
+      id = R.id.resetWaterIntakeBtn;
+      Button resetWaterIntakeBtn = ViewBindings.findChildViewById(rootView, id);
+      if (resetWaterIntakeBtn == null) {
         break missingId;
       }
 
@@ -184,7 +184,7 @@ public final class ActivityWaterBinding implements ViewBinding {
 
       return new ActivityWaterBinding((ConstraintLayout) rootView, addButton, addWaterButton,
           addWaterCardView, ammountOfWaterTxt, foodButtonIMG, homeButtonIMG, hydrationText,
-          hydrationTextPomocni, profileButtonIMG, upaliObavijesti, waterGore, waterPod);
+          profileButtonIMG, resetWaterIntakeBtn, upaliObavijesti, waterGore, waterPod);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

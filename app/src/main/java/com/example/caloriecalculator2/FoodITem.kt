@@ -3,8 +3,8 @@ package com.example.caloriecalculator2
 data class FoodITem(
     val FoodName: String = "",
     val FoodPic: String = "",
-    val CalorieAmount: Int = 0,
-    val ProteinAmount: Int = 0,
-    val CarbsAmount: Int = 0,
+    val Calories: Int = 0,
+    val Protein: Int = 0,
+    val Carbs: Int = 0,
 
 )

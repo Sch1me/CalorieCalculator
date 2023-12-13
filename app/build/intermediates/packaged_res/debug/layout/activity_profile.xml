@@ -49,22 +49,33 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/weightTxtShow"
+                android:id="@+id/carbGoalTxtShow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="30sp"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="150dp"
+                android:layout_marginTop="100dp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:text="Weight" />
+                android:text="Carbs" />
+
+            <TextView
+                android:id="@+id/proteinGoalTxtShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Protein" />
             <TextView
                 android:id="@+id/calorieGoalTxtShow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="30sp"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="50dp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:text="Calorie Goal" />
@@ -74,7 +85,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="30sp"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="50dp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:text="WaterGoal" />
@@ -88,12 +99,23 @@
             >
 
             <TextView
-                android:id="@+id/weightTxtNumShow"
+                android:id="@+id/carbsTxtNumShow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="25sp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="150dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="105dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/proteinTxtNumShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="58dp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:text="" />
@@ -102,8 +124,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="25sp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="110dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="58dp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:text="" />
@@ -112,7 +134,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="25sp"
-                android:layout_marginTop="108dp"
+                android:layout_marginTop="58dp"
+                android:layout_marginStart="10dp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:text="" />
@@ -124,11 +147,12 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/CardViewChange"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="400dp"
         app:layout_constraintBottom_toTopOf="@+id/profilePod"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profileGore">
+        app:layout_constraintTop_toBottomOf="@+id/profileGore"
+        >
 
         <LinearLayout
             android:id="@+id/lijeviTxt"
@@ -137,12 +161,22 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/weightTxt"
+                android:id="@+id/CarbTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="25dp"
-                android:text="Weight"
+                android:layout_marginTop="30dp"
+                android:text="Carb Goal"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ProteinTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="55dp"
+                android:text="Protein Goal"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -176,11 +210,21 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/weightNumTxt"
+                android:id="@+id/carbGoalNumTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
-                android:hint="Weight"
+                android:hint="Carb Goal"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/proteinGoalNumTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="Protein Goal"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:inputType="number"/>

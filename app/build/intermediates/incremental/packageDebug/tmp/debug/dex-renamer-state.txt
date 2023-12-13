@@ -1,4 +1,4 @@
-#Sun Dec 03 17:22:16 CET 2023
+#Sun Dec 10 14:21:41 CET 2023
 base.0=G\:\\zavrsniRadApp\\12223-main\\CalorieCalculator2-master\\CalorieCalculator2-master\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=G\:\\zavrsniRadApp\\12223-main\\CalorieCalculator2-master\\CalorieCalculator2-master\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=G\:\\zavrsniRadApp\\12223-main\\CalorieCalculator2-master\\CalorieCalculator2-master\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex

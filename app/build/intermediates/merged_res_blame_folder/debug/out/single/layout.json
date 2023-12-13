@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.example.caloriecalculator2.app-mergeDebugResources-38:/layout/activity_profile.xml",
+        "source": "com.example.caloriecalculator2.app-main-41:/layout/activity_profile.xml"
+    },
+    {
         "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-38:\\layout\\food_item.xml",
         "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-41:\\layout\\food_item.xml"
     },
@@ -12,12 +16,12 @@
         "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-41:\\layout\\activity_profile.xml"
     },
     {
-        "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-38:\\layout\\activity_pocetna.xml",
-        "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-41:\\layout\\activity_pocetna.xml"
+        "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-38:\\layout\\activity_food_details.xml",
+        "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-41:\\layout\\activity_food_details.xml"
     },
     {
-        "merged": "com.example.caloriecalculator2.app-mergeDebugResources-38:/layout/activity_water.xml",
-        "source": "com.example.caloriecalculator2.app-main-41:/layout/activity_water.xml"
+        "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-38:\\layout\\activity_pocetna.xml",
+        "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-41:\\layout\\activity_pocetna.xml"
     },
     {
         "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-38:\\layout\\activity_water.xml",

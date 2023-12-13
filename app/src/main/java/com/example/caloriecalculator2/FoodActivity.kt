@@ -18,7 +18,6 @@ class FoodActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-
         binding.waterButtonIMG.setOnClickListener {
 
             intent = Intent(this, WaterActivity::class.java )

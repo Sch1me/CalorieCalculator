@@ -28,6 +28,9 @@ public final class ActivityPocetnaBinding implements ViewBinding {
   public final LinearLayout bojaVrh;
 
   @NonNull
+  public final TextView calorieIntakeTxt;
+
+  @NonNull
   public final TextView calorieNumberTextView;
 
   @NonNull
@@ -43,26 +46,32 @@ public final class ActivityPocetnaBinding implements ViewBinding {
   public final ImageView waterButtonIMG;
 
   @NonNull
+  public final TextView waterConsumedTextView;
+
+  @NonNull
   public final LinearLayout waterFoodLayout;
 
   @NonNull
-  public final TextView waterNumberTextView;
+  public final TextView waterIntakeTxt;
 
   private ActivityPocetnaBinding(@NonNull ConstraintLayout rootView, @NonNull LinearLayout bojaPod,
-      @NonNull LinearLayout bojaVrh, @NonNull TextView calorieNumberTextView,
-      @NonNull ImageView foodButtonIMG, @NonNull ImageView profileButtonIMG,
-      @NonNull TextView quotesTxt, @NonNull ImageView waterButtonIMG,
-      @NonNull LinearLayout waterFoodLayout, @NonNull TextView waterNumberTextView) {
+      @NonNull LinearLayout bojaVrh, @NonNull TextView calorieIntakeTxt,
+      @NonNull TextView calorieNumberTextView, @NonNull ImageView foodButtonIMG,
+      @NonNull ImageView profileButtonIMG, @NonNull TextView quotesTxt,
+      @NonNull ImageView waterButtonIMG, @NonNull TextView waterConsumedTextView,
+      @NonNull LinearLayout waterFoodLayout, @NonNull TextView waterIntakeTxt) {
     this.rootView = rootView;
     this.bojaPod = bojaPod;
     this.bojaVrh = bojaVrh;
+    this.calorieIntakeTxt = calorieIntakeTxt;
     this.calorieNumberTextView = calorieNumberTextView;
     this.foodButtonIMG = foodButtonIMG;
     this.profileButtonIMG = profileButtonIMG;
     this.quotesTxt = quotesTxt;
     this.waterButtonIMG = waterButtonIMG;
+    this.waterConsumedTextView = waterConsumedTextView;
     this.waterFoodLayout = waterFoodLayout;
-    this.waterNumberTextView = waterNumberTextView;
+    this.waterIntakeTxt = waterIntakeTxt;
   }
 
   @Override
@@ -104,6 +113,12 @@ public final class ActivityPocetnaBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.calorieIntakeTxt;
+      TextView calorieIntakeTxt = ViewBindings.findChildViewById(rootView, id);
+      if (calorieIntakeTxt == null) {
+        break missingId;
+      }
+
       id = R.id.calorieNumberTextView;
       TextView calorieNumberTextView = ViewBindings.findChildViewById(rootView, id);
       if (calorieNumberTextView == null) {
@@ -134,21 +149,27 @@ public final class ActivityPocetnaBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.waterConsumedTextView;
+      TextView waterConsumedTextView = ViewBindings.findChildViewById(rootView, id);
+      if (waterConsumedTextView == null) {
+        break missingId;
+      }
+
       id = R.id.waterFoodLayout;
       LinearLayout waterFoodLayout = ViewBindings.findChildViewById(rootView, id);
       if (waterFoodLayout == null) {
         break missingId;
       }
 
-      id = R.id.waterNumberTextView;
-      TextView waterNumberTextView = ViewBindings.findChildViewById(rootView, id);
-      if (waterNumberTextView == null) {
+      id = R.id.waterIntakeTxt;
+      TextView waterIntakeTxt = ViewBindings.findChildViewById(rootView, id);
+      if (waterIntakeTxt == null) {
         break missingId;
       }
 
       return new ActivityPocetnaBinding((ConstraintLayout) rootView, bojaPod, bojaVrh,
-          calorieNumberTextView, foodButtonIMG, profileButtonIMG, quotesTxt, waterButtonIMG,
-          waterFoodLayout, waterNumberTextView);
+          calorieIntakeTxt, calorieNumberTextView, foodButtonIMG, profileButtonIMG, quotesTxt,
+          waterButtonIMG, waterConsumedTextView, waterFoodLayout, waterIntakeTxt);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
