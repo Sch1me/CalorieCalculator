@@ -1,0 +1,25 @@
+#Mon Mar 11 17:26:01 CET 2024
+base.0=G\:\\Users\\Šime\\OneDrive\\Radna površina\\Zavrsni Rad Veljaca Drugi\\CalorieCalculatorZavrsni-master\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=G\:\\Users\\Šime\\OneDrive\\Radna površina\\Zavrsni Rad Veljaca Drugi\\CalorieCalculatorZavrsni-master\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=G\:\\Users\\Šime\\OneDrive\\Radna površina\\Zavrsni Rad Veljaca Drugi\\CalorieCalculatorZavrsni-master\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
+base.3=G\:\\Users\\Šime\\OneDrive\\Radna površina\\Zavrsni Rad Veljaca Drugi\\CalorieCalculatorZavrsni-master\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
+base.4=G\:\\Users\\Šime\\OneDrive\\Radna površina\\Zavrsni Rad Veljaca Drugi\\CalorieCalculatorZavrsni-master\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+base.5=G\:\\Users\\Šime\\OneDrive\\Radna površina\\Zavrsni Rad Veljaca Drugi\\CalorieCalculatorZavrsni-master\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
+base.6=G\:\\Users\\Šime\\OneDrive\\Radna površina\\Zavrsni Rad Veljaca Drugi\\CalorieCalculatorZavrsni-master\\app\\build\\intermediates\\desugar_lib_dex\\debug\\classes1000.dex
+base.7=G\:\\Users\\Šime\\OneDrive\\Radna površina\\Zavrsni Rad Veljaca Drugi\\CalorieCalculatorZavrsni-master\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+path.0=classes.dex
+path.1=0/classes.dex
+path.2=11/classes.dex
+path.3=13/classes.dex
+path.4=6/classes.dex
+path.5=9/classes.dex
+path.6=classes1000.dex
+path.7=classes2.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex
+renamed.3=classes4.dex
+renamed.4=classes5.dex
+renamed.5=classes6.dex
+renamed.6=classes7.dex
+renamed.7=classes8.dex

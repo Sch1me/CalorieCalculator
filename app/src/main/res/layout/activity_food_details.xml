@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodDetailsActivity"
+    android:background="@drawable/background_food_details_novije">
+
+    <ProgressBar
+        android:id="@+id/determinateBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progress="25"/>
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/buttoniBoja"/>
+
+    <Button
+        android:id="@+id/addCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Calories"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/buttoniBoja"/>
+
+    <Button
+        android:id="@+id/addProtein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Protein"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addCalories"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/buttoniBoja"/>
+
+    <Button
+        android:id="@+id/addCarbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Carbs"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addProtein"
+        android:backgroundTint="@color/buttoniBoja"
+        android:layout_marginTop="50dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addCaloriesCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="@color/cardViewPozadina"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/addCaloriesTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:fontFamily="@font/linden_hill"
+                android:hint="@string/quick_add_caloriesTxt"
+                android:gravity="center"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_marginStart="100dp"/>
+
+            <Button
+                android:id="@+id/addButtonCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/addBtnText"
+                android:backgroundTint="@color/buttoniBoja"
+                android:layout_marginStart="160dp"/>
+            <Button
+                android:id="@+id/BackButtonCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BackBtnTxt"
+                android:backgroundTint="@color/buttoniBoja"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addProteinCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="15dp"
+        android:backgroundTint="@color/cardViewPozadina">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/addProteinTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/linden_hill"
+                android:inputType="number"
+                android:gravity="center"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:hint="@string/quick_add_ProteinTxt"
+                android:layout_marginStart="100dp"/>
+
+            <Button
+                android:id="@+id/addButtonProtein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/addBtnText"
+                android:backgroundTint="@color/buttoniBoja"
+                android:layout_marginStart="160dp"/>
+            <Button
+                android:id="@+id/BackButtonProtein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BackBtnTxt"
+                android:backgroundTint="@color/buttoniBoja"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addCarbsCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="15dp"
+        android:backgroundTint="@color/cardViewPozadina">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/addCarbsTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/linden_hill"
+                android:inputType="number"
+                android:hint="@string/quick_add_carbsTxt"
+                android:gravity="center"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_marginStart="100dp"/>
+
+            <Button
+                android:id="@+id/addButtonCarbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttoniBoja"
+                android:text="@string/addBtnText"
+                android:layout_marginStart="160dp"/>
+            <Button
+                android:id="@+id/BackButtonCarbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BackBtnTxt"
+                android:backgroundTint="@color/buttoniBoja"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/calorieIntakeTextViewCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/addCalories"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginStart="25dp"
+    android:layout_marginEnd="25dp"
+    app:cardCornerRadius="20dp"
+    android:backgroundTint="@color/prozirno2">
+
+    <TextView
+        android:id="@+id/calorieIntakeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/linden_hill"
+        android:text="Calorie Intake"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="9dp"
+        android:layout_marginVertical="3dp"/>
+
+</androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/addProtein"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginStart="25dp"
+    android:layout_marginEnd="25dp"
+    app:cardCornerRadius="20dp"
+    android:backgroundTint="@color/prozirno2">
+    <TextView
+        android:id="@+id/proteinIntakeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/linden_hill"
+        android:text="Protein Intake"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="9dp"
+        android:layout_marginVertical="3dp"/>
+</androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/addCarbs"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginStart="25dp"
+    android:layout_marginEnd="25dp"
+    app:cardCornerRadius="20dp"
+    android:backgroundTint="@color/prozirno2">
+    <TextView
+        android:id="@+id/carbIntakeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carb Intake"
+        android:fontFamily="@font/linden_hill"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="9dp"
+        android:layout_marginVertical="3dp"/>
+</androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/addCalories"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginEnd="25dp"
+    app:cardCornerRadius="20dp"
+    android:backgroundTint="@color/prozirno">
+    <TextView
+        android:id="@+id/calorieIntakeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calorie Goal"
+        android:fontFamily="@font/linden_hill"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="9dp"
+        />
+</androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/addProtein"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginEnd="25dp"
+    app:cardCornerRadius="20dp"
+    android:backgroundTint="@color/prozirno">
+    <TextView
+        android:id="@+id/proteinIntakeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Protein Goal"
+        android:fontFamily="@font/linden_hill"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="9dp"
+        />
+</androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/addCarbs"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginEnd="25dp"
+    app:cardCornerRadius="20dp"
+    android:backgroundTint="@color/prozirno">
+    <TextView
+        android:id="@+id/carbIntakeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carb Goal"
+        android:fontFamily="@font/linden_hill"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="9dp"
+        />
+</androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

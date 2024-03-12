@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "547817927692",
+    "project_id": "caloriecalculator2-2cb5c",
+    "storage_bucket": "caloriecalculator2-2cb5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547817927692:android:25379a9dd0f05dd736aa29",
+        "android_client_info": {
+          "package_name": "com.example.caloriecalculator2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEVa8ccN_Hqdc2U4c7H_roHlWlZOyjgSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

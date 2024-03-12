@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Calorie Calculator</string>
+    <string name="pocetnaNaslovTxt">HOME</string>
+    <string name="foodBtn">Food</string>
+    <string name="profileBtn">Profile</string>
+    <string name="profileHeadingTxt">PROFILE</string>
+    <string name="waterHeadingTxt">WATER</string>
+    <string name="add_waterBtn">Add Water</string>
+    <string name="progress_tabTxt">Progress Tab</string>
+    <string name="foodHeadingTxt">FOOD</string>
+    <string name="AddingWaterHintText">Ammount of water you \n drank in dcl</string>
+    <string name="reset_water_intake_Btn_Text">Reset Water Intake</string>
+    <string name="quick_add_caloriesTxt">Enter Calories</string>
+    <string name="quick_add_ProteinTxt">Enter Protein</string>
+    <string name="quick_add_carbsTxt">Add Carbs</string>
+    <string name="addBtnText">Add</string>
+    <string name="BackBtnTxt">Back</string>
+    <string name="turn_the_notifications_on_btn_Text">Turn the notifications ON</string>
+    <string name="profile_stats_heading">PROFILE STATS</string>
+</resources>

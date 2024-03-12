@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#274CD6</color>
+    <color name="gray">#8B8686</color>
+    <color name="prozirno">#00F44336</color>
+    <color name="prozirno3">#BF9B5DAF</color>
+    <color name="prozirnoTamnije">#D8787778</color>
+    <color name="prozirno2">#BF3D1240</color>
+    <color name="cardViewPozadina">#CB820A8F</color>
+    <color name="buttoniBoja">#E6490849</color>
+    <color name="textButtonColor">#FFFFFF</color>
+</resources>
