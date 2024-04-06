@@ -88,11 +88,11 @@ class FoodAdapter  (
                 }else if(ammountEaten.toInt() >= 100) {
                     //ako user unese da je pojeo necega vise ili jednako 100g
                     calorieIntake =
-                        (calorieIntake.toInt() + currentCalorieValue * (ammountEaten.toInt() / 100)).toString()
+                        (calorieIntake.toFloat() + currentCalorieValue * (ammountEaten.toFloat() / 100)).toString()
                     carbIntake =
-                        (carbIntake.toInt() + currentCarbValue * (ammountEaten.toInt() / 100)).toString()
+                        (carbIntake.toFloat() + currentCarbValue * (ammountEaten.toFloat() / 100)).toString()
                     proteinIntake =
-                        (proteinIntake.toInt() + currentProteinValue * (ammountEaten.toInt() / 100)).toString()
+                        (proteinIntake.toFloat() + currentProteinValue * (ammountEaten.toFloat() / 100)).toString()
 
                     dataBaseIntake.child("CalorieIntake").setValue(calorieIntake)
                     dataBaseIntake.child("CarbIntake").setValue(carbIntake)
@@ -100,9 +100,9 @@ class FoodAdapter  (
                     itemBinding.newScreenCardViewID.visibility = View.GONE
 
                 }else{
-                    calorieIntake =(calorieIntake.toInt() + (currentCalorieValue/10) * (ammountEaten.toInt()/10)).toString()
-                    carbIntake =(carbIntake.toInt() + (currentCarbValue/10) * (ammountEaten.toInt()/10)).toString()
-                    proteinIntake =(proteinIntake.toInt() + (currentProteinValue/10) * (ammountEaten.toInt()/10)).toString()
+                    calorieIntake =(calorieIntake.toFloat() + (currentCalorieValue/10) * (ammountEaten.toFloat()/10)).toString()
+                    carbIntake =(carbIntake.toFloat() + (currentCarbValue/10) * (ammountEaten.toFloat()/10)).toString()
+                    proteinIntake =(proteinIntake.toFloat() + (currentProteinValue/10) * (ammountEaten.toFloat()/10)).toString()
 
                     dataBaseIntake.child("CalorieIntake").setValue((calorieIntake))
                     dataBaseIntake.child("CarbIntake").setValue(carbIntake)

@@ -24,32 +24,66 @@ class ProfileStatsActivity : AppCompatActivity() {
     lateinit var binding : ActivityProfileStatsBinding
     private val dataBase: DatabaseReference =
         FirebaseDatabase.getInstance("https://caloriecalculator2-2cb5c-default-rtdb.europe-west1.firebasedatabase.app/").getReference("IntakeHistory")
-    val StatsList = ArrayList<StatsModel>()
+    var StatsList = ArrayList<StatsModel>()
     val xValues = ArrayList<String>()
-    val yValues = ArrayList<String>()
+    val yValues = ArrayList<Float>()
+    lateinit var barList:ArrayList<BarEntry>
+    lateinit var barDataSet:BarDataSet
+    lateinit var barData : BarData
+    var index = 0
+    //kemijanje
+    var i = 0
      override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityProfileStatsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        for (i in StatsList){
-             xValues.add(StatsModel().dateOfIntake)
-             yValues.add(((StatsModel().calorieIntake.toInt() / StatsModel().calorieGoal.toInt()) * 100).toString() + " %")
-        }
-        val entries = ArrayList<BarEntry>()
-        for (i in yValues.indices) {
-            entries.add(BarEntry(xValues[i].toFloat(),yValues[i].toFloat()))
-        }
+         barList = ArrayList()
+         //očitava bazu podataka
+         dataBase.child("Stats").addValueEventListener(object :ValueEventListener{
+             override fun onDataChange(snapshot: DataSnapshot) {
+                 try {
+                     //dodava sve elemente u listu
+                     val a : List<StatsModel> = snapshot.children.map { dataSnapshot -> dataSnapshot.getValue(StatsModel::class.java)!! }
+                     StatsList.addAll(a)
 
-        val dataSet = BarDataSet(entries, "LEGENDA") // Label predstavlja legendu grafikona
+                 }catch (e:Exception){
+                     Toast.makeText(this@ProfileStatsActivity,"$e",Toast.LENGTH_LONG).show()
+                 }
+                 //provjerava ako je empty string da stavi 0, jer znaci da korisnik nije unio nista taj dan
+                 while (i < StatsList.size){
+                     if(StatsList[i].calorieIntake.isEmpty()){
+                         StatsList[i].calorieIntake = "0"
+                     }
+                     if(StatsList[i].calorieGoal.isEmpty()){
+                         StatsList[i].calorieGoal = "2500"
+                     }
+                     i++
+                 }
+                 //postavlja podatke za dijagram
+                 while(index < StatsList.size){
+                     barList.add(BarEntry(index.toFloat(),((StatsList[index].calorieIntake.toFloat() / StatsList[index].calorieGoal.toFloat())*100)))
+                     index++
+                 }
+                 val emptyAdapter = ProfileStatsAdapter(StatsList,this@ProfileStatsActivity)
+                 binding.statsList.apply {
+                     layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL,false)
+                     adapter = ProfileStatsAdapter(StatsList, this@ProfileStatsActivity)
+                 }
 
-        val data = BarData(dataSet)
-        // Postavljanje vrijednosti X osi
-        binding.dijagram.xAxis.valueFormatter = IndexAxisValueFormatter()
-        binding.dijagram.xAxis.position = XAxis.XAxisPosition.BOTTOM
-        binding.dijagram.data = data
-        binding.dijagram.invalidate()
+                 //postavlja graf na neke vrijednosti
+                 barDataSet= BarDataSet(barList,"Naslov")
+                 barData = BarData(barDataSet)
+                 binding.dijagram.data = BarData(BarDataSet(barList,"Calorie intake history in %"))
+                 binding.dijagram.data.barWidth = 1F
 
+                 binding.dijagram.invalidate()
+             }
+
+             override fun onCancelled(error: DatabaseError) {
+                 TODO("Not yet implemented")
+             }
+         })
         //upravljanje vidljivoscu loadinga progress bara
         Handler().postDelayed({
             // Postavljanje vidljivosti ProgressBar-a na false nakon 2 sekunde
@@ -61,29 +95,6 @@ class ProfileStatsActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        dataBase.child("Stats").addValueEventListener(object :ValueEventListener{
-            override fun onDataChange(snapshot: DataSnapshot) {
-                try {
-                    val a : List<StatsModel> = snapshot.children.map { dataSnapshot -> dataSnapshot.getValue(StatsModel::class.java)!! }
-                    StatsList.addAll(a)
-
-                }catch (e:Exception){
-                    Toast.makeText(this@ProfileStatsActivity,"$e",Toast.LENGTH_LONG).show()
-                }
-                val emptyAdapter = ProfileStatsAdapter(StatsList,this@ProfileStatsActivity)
-                binding.statsList.apply {
-                    layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL,false)
-                    adapter = ProfileStatsAdapter(StatsList, this@ProfileStatsActivity)
-                }
-            }
-
-            override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
-            }
-        })
-
-
 
     }
-
 }

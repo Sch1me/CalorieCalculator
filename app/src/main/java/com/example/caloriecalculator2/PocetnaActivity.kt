@@ -18,6 +18,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.getValue
 import java.lang.Exception
+import java.text.Format
 import java.util.Calendar
 import java.util.Date
 import kotlin.random.Random
@@ -41,6 +42,7 @@ class PocetnaActivity : AppCompatActivity() {
     var calorieGoal: String = ""
     var consumedWater : String = ""
     var waterGoal : String = ""
+    var waterLiters : Float = 0f
     var Quotes = ArrayList<String>()
 
     var y1 : Float = 0.0f
@@ -96,8 +98,10 @@ class PocetnaActivity : AppCompatActivity() {
         dataBaseWater.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 consumedWater = snapshot.child("CurrentWater").getValue().toString()
+                waterLiters  = (consumedWater.toFloat()* 0.1f)
+                val brojZaIspis = String.format("%.2f",waterLiters)
         //postavlja pocetni tekst o unesenoj vodi
-                binding.waterConsumedTextView.text = consumedWater + " / " + waterGoal + "0 dcl"
+                binding.waterConsumedTextView.text = brojZaIspis + " / " + waterGoal + "l"
             }
 
             override fun onCancelled(error: DatabaseError) {
@@ -129,11 +133,13 @@ class PocetnaActivity : AppCompatActivity() {
             }
         })
 
+        //citanje baze gdje postavi tekst stari za moje trenutne kalorije i postavi da pise calorie goal
         dataBase2.addValueEventListener(object :ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 try {
                     waterGoal = snapshot.child("WaterGoal").getValue().toString()
-                    binding.waterConsumedTextView.text = consumedWater + " / " + waterGoal+"0" + " dcl"
+                    val brojZaIspis = String.format("%.2f",waterLiters)
+                    binding.waterConsumedTextView.text = brojZaIspis + " / " + waterGoal + "l"
                 }catch (_:Exception){}
             }
 

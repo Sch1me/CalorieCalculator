@@ -1,12 +1,12 @@
-#Mon Mar 11 17:26:01 CET 2024
-base.0=G\:\\Users\\Šime\\OneDrive\\Radna površina\\Zavrsni Rad Veljaca Drugi\\CalorieCalculatorZavrsni-master\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=G\:\\Users\\Šime\\OneDrive\\Radna površina\\Zavrsni Rad Veljaca Drugi\\CalorieCalculatorZavrsni-master\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=G\:\\Users\\Šime\\OneDrive\\Radna površina\\Zavrsni Rad Veljaca Drugi\\CalorieCalculatorZavrsni-master\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
-base.3=G\:\\Users\\Šime\\OneDrive\\Radna površina\\Zavrsni Rad Veljaca Drugi\\CalorieCalculatorZavrsni-master\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
-base.4=G\:\\Users\\Šime\\OneDrive\\Radna površina\\Zavrsni Rad Veljaca Drugi\\CalorieCalculatorZavrsni-master\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
-base.5=G\:\\Users\\Šime\\OneDrive\\Radna površina\\Zavrsni Rad Veljaca Drugi\\CalorieCalculatorZavrsni-master\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
-base.6=G\:\\Users\\Šime\\OneDrive\\Radna površina\\Zavrsni Rad Veljaca Drugi\\CalorieCalculatorZavrsni-master\\app\\build\\intermediates\\desugar_lib_dex\\debug\\classes1000.dex
-base.7=G\:\\Users\\Šime\\OneDrive\\Radna površina\\Zavrsni Rad Veljaca Drugi\\CalorieCalculatorZavrsni-master\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+#Sat Apr 06 10:00:45 CEST 2024
+base.0=C\:\\Users\\Korisnik\\StudioProjects\\CalorieCalculator\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\Korisnik\\StudioProjects\\CalorieCalculator\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\Korisnik\\StudioProjects\\CalorieCalculator\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
+base.3=C\:\\Users\\Korisnik\\StudioProjects\\CalorieCalculator\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
+base.4=C\:\\Users\\Korisnik\\StudioProjects\\CalorieCalculator\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+base.5=C\:\\Users\\Korisnik\\StudioProjects\\CalorieCalculator\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
+base.6=C\:\\Users\\Korisnik\\StudioProjects\\CalorieCalculator\\app\\build\\intermediates\\desugar_lib_dex\\debug\\classes1000.dex
+base.7=C\:\\Users\\Korisnik\\StudioProjects\\CalorieCalculator\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=11/classes.dex

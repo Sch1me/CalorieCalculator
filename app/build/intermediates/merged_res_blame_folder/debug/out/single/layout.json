@@ -1,46 +1,46 @@
 [
     {
-        "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-39:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-42:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\Korisnik\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-39:\\layout\\profile_stats_item.xml",
+        "source": "C:\\Users\\Korisnik\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-42:\\layout\\profile_stats_item.xml"
     },
     {
-        "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-39:\\layout\\food_item.xml",
-        "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-42:\\layout\\food_item.xml"
+        "merged": "C:\\Users\\Korisnik\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-39:\\layout\\activity_water.xml",
+        "source": "C:\\Users\\Korisnik\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-42:\\layout\\activity_water.xml"
     },
     {
-        "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-39:\\layout\\activity_pocetna.xml",
-        "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-42:\\layout\\activity_pocetna.xml"
+        "merged": "C:\\Users\\Korisnik\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-39:\\layout\\food_item.xml",
+        "source": "C:\\Users\\Korisnik\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-42:\\layout\\food_item.xml"
     },
     {
-        "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-39:\\layout\\activity_food.xml",
-        "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-42:\\layout\\activity_food.xml"
+        "merged": "C:\\Users\\Korisnik\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-39:\\layout\\activity_profile.xml",
+        "source": "C:\\Users\\Korisnik\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-42:\\layout\\activity_profile.xml"
     },
     {
-        "merged": "com.example.caloriecalculator2.app-mergeDebugResources-39:/layout/activity_profile_stats.xml",
-        "source": "com.example.caloriecalculator2.app-main-42:/layout/activity_profile_stats.xml"
+        "merged": "C:\\Users\\Korisnik\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-39:\\layout\\activity_pocetna.xml",
+        "source": "C:\\Users\\Korisnik\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-42:\\layout\\activity_pocetna.xml"
     },
     {
-        "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-39:\\layout\\activity_food_details.xml",
-        "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-42:\\layout\\activity_food_details.xml"
+        "merged": "C:\\Users\\Korisnik\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-39:\\layout\\activity_food.xml",
+        "source": "C:\\Users\\Korisnik\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-42:\\layout\\activity_food.xml"
     },
     {
-        "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-39:\\layout\\activity_profile_stats.xml",
-        "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-42:\\layout\\activity_profile_stats.xml"
+        "merged": "com.example.caloriecalculator2.app-mergeDebugResources-39:/layout/activity_water.xml",
+        "source": "com.example.caloriecalculator2.app-main-42:/layout/activity_water.xml"
     },
     {
-        "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-39:\\layout\\profile_stats_item.xml",
-        "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-42:\\layout\\profile_stats_item.xml"
+        "merged": "C:\\Users\\Korisnik\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-39:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Korisnik\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-42:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-39:\\layout\\activity_water.xml",
-        "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-42:\\layout\\activity_water.xml"
+        "merged": "C:\\Users\\Korisnik\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-39:\\layout\\activity_profile_stats.xml",
+        "source": "C:\\Users\\Korisnik\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-42:\\layout\\activity_profile_stats.xml"
     },
     {
-        "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-39:\\layout\\activity_profile.xml",
-        "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-42:\\layout\\activity_profile.xml"
+        "merged": "C:\\Users\\Korisnik\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-39:\\layout\\activity_food_details.xml",
+        "source": "C:\\Users\\Korisnik\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-42:\\layout\\activity_food_details.xml"
     },
     {
-        "merged": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-39:\\layout\\activity_progress.xml",
-        "source": "C:\\Users\\Šime\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-42:\\layout\\activity_progress.xml"
+        "merged": "C:\\Users\\Korisnik\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-mergeDebugResources-39:\\layout\\activity_progress.xml",
+        "source": "C:\\Users\\Korisnik\\.gradle\\daemon\\8.0\\com.example.caloriecalculator2.app-main-42:\\layout\\activity_progress.xml"
     }
 ]

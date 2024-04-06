@@ -66,7 +66,36 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        pozivanjeDate()
+        pozivanjeIntake()
+        pozivanjeHistory()
 
+        binding.button.setOnClickListener {
+
+            //brisanje iz baze
+            if(dateNow.toString() != date1.toString()){
+                var i = 0
+                while (i <= velicinaListe){
+                    historyList.add(i, StatsModel(calorieIntake, date1, calorieGoal))
+                    i++
+                }
+                dataBaseHistory.child("Stats").setValue(historyList)
+                //brise podatke iz baze
+                dataBaseIntake.child("CalorieIntake").setValue(0)
+                dataBaseIntake.child("ProteinIntake").setValue(0)
+                dataBaseIntake.child("CarbIntake").setValue(0)
+                dataBaseWater.child("CurrentWater").setValue(0)
+                dataBaseDate.child("LastDateChange").setValue(dateNow.toString())
+            }
+
+            //kraj brisanja podataka (koda)
+
+            intent = Intent(this@MainActivity,ProfileActivity::class.java)
+            startActivity(intent)
+        }
+
+    }
+    private fun pozivanjeDate(){
         //citanje datuma i brisanje podatak iz baze podataka
         dataBaseDate.addValueEventListener(object :ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -85,7 +114,27 @@ class MainActivity : AppCompatActivity() {
                 TODO("Not yet implemented")
             }
         })
+    }
+    private fun pozivanjeHistory(){
+        dataBaseHistory.child("Stats").addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                try {
+                    val a : List<StatsModel> = snapshot.children.map { dataSnapshot -> dataSnapshot.getValue(StatsModel::class.java)!! }
+                    historyList.addAll(a)
+                    velicinaListe=historyList.size / 3
+                    Toast.makeText(this@MainActivity,"Ocitalo je listu",Toast.LENGTH_SHORT).show()
 
+                }catch (E:Exception){
+                    Toast.makeText(this@MainActivity,"GRESKA U HISTORY BAZI",Toast.LENGTH_LONG).show()
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Toast.makeText(this@MainActivity,"CANCELED", Toast.LENGTH_SHORT).show()
+            }
+        })
+    }
+    private fun pozivanjeIntake(){
         dataBaseGoals.addValueEventListener(object :ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 try {
@@ -113,53 +162,6 @@ class MainActivity : AppCompatActivity() {
                 TODO("Not yet implemented")
             }
         })
-
-//kemijanje
-        dataBaseHistory.child("Stats").addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                try {
-                    val a : List<StatsModel> = snapshot.children.map { dataSnapshot -> dataSnapshot.getValue(StatsModel::class.java)!! }
-                    historyList.addAll(a)
-                    velicinaListe=historyList.size / 3
-
-
-                }catch (E:Exception){
-                    Toast.makeText(this@MainActivity,"GRESKA U HISTORY BAZI",Toast.LENGTH_LONG).show()
-                }
-            }
-
-            override fun onCancelled(error: DatabaseError) {
-                Toast.makeText(this@MainActivity,"CANCELED", Toast.LENGTH_SHORT).show()
-            }
-        })
-
-
-        binding.button.setOnClickListener {
-
-            //brisanje iz baze
-            if(dateNow.toString() != date1.toString()){
-
-                //upisuje povijest podataka da imam praćenje unosa kalorija
-                historyList.add(velicinaListe, StatsModel(calorieIntake,date1,calorieGoal))
-                dataBaseHistory.child("Stats").setValue(historyList)
-
-                //brise podatke iz baze
-                dataBaseIntake.child("CalorieIntake").setValue(0)
-                dataBaseIntake.child("ProteinIntake").setValue(0)
-                dataBaseIntake.child("CarbIntake").setValue(0)
-                dataBaseWater.child("CurrentWater").setValue(0)
-                dataBaseDate.child("LastDateChange").setValue(dateNow.toString())
-            }
-
-            //kraj brisanja podataka (koda)
-
-            intent = Intent(this@MainActivity,ProfileActivity::class.java)
-            startActivity(intent)
-        }
-
     }
+
  }
-
-
-
-

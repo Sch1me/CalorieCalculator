@@ -23,9 +23,9 @@ class FoodDetailsActivity : AppCompatActivity() {
     private val dataBaseIntake: DatabaseReference =
         FirebaseDatabase.getInstance("https://caloriecalculator2-2cb5c-default-rtdb.europe-west1.firebasedatabase.app/").getReference("CurrentIntake")
 
-    var calorieIntake : Int = 0
-    var proteinIntake : Int = 0
-    var carbIntake : Int = 0
+    var calorieIntake : Float = 0f
+    var proteinIntake : Float = 0f
+    var carbIntake : Float = 0f
     //goals
     var calorieGoal: Int = 0
     var proteinGoal: Int = 0
@@ -86,9 +86,9 @@ class FoodDetailsActivity : AppCompatActivity() {
         dataBaseIntake.addValueEventListener(object :ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 try {
-                    calorieIntake = snapshot.child("CalorieIntake").getValue().toString().toInt()
-                    proteinIntake = snapshot.child("ProteinIntake").getValue().toString().toInt()
-                    carbIntake = snapshot.child("CarbIntake").getValue().toString().toInt()
+                    calorieIntake = snapshot.child("CalorieIntake").getValue().toString().toFloat()
+                    proteinIntake = snapshot.child("ProteinIntake").getValue().toString().toFloat()
+                    carbIntake = snapshot.child("CarbIntake").getValue().toString().toFloat()
                 }catch (_:Exception){}
             }
 
@@ -103,7 +103,7 @@ class FoodDetailsActivity : AppCompatActivity() {
 
         binding.addButtonCalories.setOnClickListener {
             try {
-                val calorieIntake2 : Int = binding.addCaloriesTxt.text.toString().toInt()
+                val calorieIntake2 : Float = binding.addCaloriesTxt.text.toString().toFloat()
                 calorieIntake += calorieIntake2
                 dataBaseIntake.child("CalorieIntake").setValue(calorieIntake)
             }catch (_:Exception){
@@ -114,7 +114,7 @@ class FoodDetailsActivity : AppCompatActivity() {
         }
         binding.addButtonProtein.setOnClickListener {
             try {
-                val proteinIntake2 : Int = binding.addProteinTxt.text.toString().toInt()
+                val proteinIntake2 : Float = binding.addProteinTxt.text.toString().toFloat()
                 proteinIntake += proteinIntake2
                 dataBaseIntake.child("ProteinIntake").setValue(proteinIntake)
             }catch (_:Exception){
@@ -126,7 +126,7 @@ class FoodDetailsActivity : AppCompatActivity() {
         binding.addButtonCarbs.setOnClickListener {
 
             try {
-                val carbsIntake2 : Int = binding.addCarbsTxt.text.toString().toInt()
+                val carbsIntake2 : Float = binding.addCarbsTxt.text.toString().toFloat()
                 carbIntake += carbsIntake2
                 dataBaseIntake.child("CarbIntake").setValue(carbIntake)
             }catch (_:Exception){

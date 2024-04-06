@@ -34,8 +34,8 @@ import java.util.Locale
 class WaterActivity : AppCompatActivity() {
     lateinit var binding: ActivityWaterBinding
     var waterAdded : String= ""
-    var waterInLiters : Int = 0
-    var totalWaterAdded : Int = 0
+    var waterInLiters : Float = 0f
+    var totalWaterAdded : Float = 0f
         private val dataBase: DatabaseReference =
         FirebaseDatabase.getInstance("https://caloriecalculator2-2cb5c-default-rtdb.europe-west1.firebasedatabase.app/").getReference("Water")
 
@@ -68,8 +68,8 @@ class WaterActivity : AppCompatActivity() {
         dataBase.addValueEventListener(object :ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 val waterInDataBase : String = snapshot.child("CurrentWater").getValue().toString()
-                binding.hydrationText.text = "Current water intake: " + waterInDataBase + " dcl"
-                totalWaterAdded = waterInDataBase.toInt()
+                binding.hydrationText.text = "Current water intake: " + (waterInDataBase.toFloat() / 10f).toString() + " l"
+                totalWaterAdded = waterInDataBase.toFloat()
             }
 
             override fun onCancelled(error: DatabaseError) {
@@ -112,11 +112,11 @@ class WaterActivity : AppCompatActivity() {
                 Toast.makeText(this@WaterActivity, "You didn't drink anything :((", Toast.LENGTH_SHORT).show()
                 binding.addWaterCardView.visibility = View.GONE
             }else {
-                totalWaterAdded += waterAdded.toInt()
-                waterInLiters = (totalWaterAdded / 10)
+                totalWaterAdded += waterAdded.toFloat()
                 dataBase.child("CurrentWater").setValue(totalWaterAdded.toString())
+                val brojZaIspis = String.format("%.2f",(totalWaterAdded/10f))
                 binding.hydrationText.text =
-                    "Current water intake: " + totalWaterAdded.toString() + " dcl"
+                    "Current water intake: " + brojZaIspis + " l"
                 binding.ammountOfWaterTxt.text = null
                 binding.addWaterCardView.visibility = View.GONE
             }
@@ -125,17 +125,18 @@ class WaterActivity : AppCompatActivity() {
 //button za resetiranje trenutnog unosa vode
 
         binding.resetWaterIntakeBtn.setOnClickListener{
-            val oldWaterIntake : Int = totalWaterAdded
-            totalWaterAdded = 0
+            val oldWaterIntake : Float = totalWaterAdded
+            totalWaterAdded = 0f
             binding.hydrationText.text =
                 "Current water intake: " + totalWaterAdded.toString() + " dcl"
             dataBase.child("CurrentWater").setValue(totalWaterAdded)
             Toast.makeText(this@WaterActivity,"You just did a reset of your water intake!", Toast.LENGTH_SHORT).show()
-            Toast.makeText(this@WaterActivity,"Your water intake was: " + oldWaterIntake + " dcl", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@WaterActivity,"Your water intake was: " + oldWaterIntake / 10f + " l", Toast.LENGTH_SHORT).show()
         }
 
     }
 
+    //funkcija za slajdanje lijevo-desno
     override fun onTouchEvent(touchEvent: MotionEvent): Boolean {
         when (touchEvent.action) {
             MotionEvent.ACTION_DOWN -> {

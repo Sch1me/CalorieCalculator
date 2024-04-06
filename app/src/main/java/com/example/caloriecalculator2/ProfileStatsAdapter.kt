@@ -42,7 +42,7 @@ class ProfileStatsAdapter (
         RecyclerView.ViewHolder(itemBinding.root){
         fun bindItem(statsModel: ArrayList<StatsModel>, th: Context,position: Int){
 
-            if(statsModel[0].calorieIntake.toInt() != 0 ){
+            if(statsModel[0].calorieIntake.toFloat() != 0f ){
                 itemBinding.calorieIntakeTxt.text = statsModel[0].calorieIntake + " / " + statsModel[0].calorieGoal
                 itemBinding.dateOfIntakeTxt.text = statsModel[0].dateOfIntake
             }else{
