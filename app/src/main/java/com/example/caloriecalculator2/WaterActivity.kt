@@ -1,34 +1,18 @@
 package com.example.caloriecalculator2
 
-import android.Manifest
-import android.app.NotificationChannel
-import android.app.NotificationManager
 import android.content.Intent
-import android.content.pm.PackageManager
-import android.opengl.Visibility
-import android.os.Build
-import android.os.Build.VERSION_CODES
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.MotionEvent
 import android.view.View
 import android.widget.Toast
-import androidx.annotation.RequiresApi
-import androidx.core.app.ActivityCompat
-import androidx.core.app.NotificationCompat
-import androidx.core.app.NotificationManagerCompat
+import androidx.appcompat.app.AppCompatActivity
 import com.example.caloriecalculator2.databinding.ActivityWaterBinding
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.google.firebase.database.getValue
-import java.lang.Exception
-import java.text.SimpleDateFormat
-import java.util.Date
-import java.util.Locale
 
 @Suppress("UNUSED_EXPRESSION")
 class WaterActivity : AppCompatActivity() {

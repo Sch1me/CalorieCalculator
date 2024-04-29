@@ -6,17 +6,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.caloriecalculator2.databinding.FoodItemBinding
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.google.firebase.database.getValue
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
-import com.bumptech.glide.annotation.GlideModule
-import com.bumptech.glide.module.AppGlideModule
 
 
 private val dataBase: DatabaseReference =
@@ -161,16 +159,16 @@ class FoodAdapter  (
             itemBinding.foodNameTextView3.text=foodsModels[2].Name
              val storageReference: StorageReference =
                  FirebaseStorage.getInstance().getReference().child("foods/${foodsModels[0].Name}.jpg")
-            //GlideApp.with(this@ViewHolder).load(storageReference).into(itemBinding.foodImageView)
+            Glide.with(th).load(storageReference).into(itemBinding.foodImageView)
 
             val storageReference2: StorageReference =
                 FirebaseStorage.getInstance().getReference().child("foods/${foodsModels[1].Name}.jpg")
-            //GlideApp.with(this@ViewHolder).load(storageReference2).into(itemBinding.foodImageView2)
+            Glide.with(th).load(storageReference2).into(itemBinding.foodImageView2)
 
             val storageReference3: StorageReference =
                 FirebaseStorage.getInstance().getReference().child("foods/${foodsModels[2].Name}.jpg")
-            //GlideApp.with(this@ViewHolder).load(storageReference3).into(itemBinding.foodImageView3)
-
+            Glide.with(th).load(storageReference3).into(itemBinding.foodImageView3)
+          //  GlideApp.with(th).load(storageReference3).into(itemBinding.foodImageView3)
 
             //NAPRAVIT KOD ZA UVRSTAVANJE SLIKA
 

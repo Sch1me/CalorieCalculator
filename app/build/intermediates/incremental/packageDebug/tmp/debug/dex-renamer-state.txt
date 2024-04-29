@@ -1,4 +1,4 @@
-#Sun Apr 28 12:02:06 CEST 2024
+#Tue Apr 30 16:40:14 CEST 2024
 base.0=C\:\\Users\\Šime\\StudioProjects\\CalorieCalculator89\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\Šime\\StudioProjects\\CalorieCalculator89\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\Šime\\StudioProjects\\CalorieCalculator89\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex

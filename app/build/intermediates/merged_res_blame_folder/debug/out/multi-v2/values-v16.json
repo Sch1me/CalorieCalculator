@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.caloriecalculator2.app-mergeDebugResources-38:/values-v16/values-v16.xml",
+            "outputFile": "com.example.caloriecalculator2.app-mergeDebugResources-40:/values-v16/values-v16.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Šime\\.gradle\\caches\\transforms-3\\fd033421a9788c20fcde6d11e367f19f\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
@@ -12,24 +12,6 @@
                         "endLines": "5",
                         "endColumns": "12",
                         "endOffsets": "223"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "121",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Šime\\.gradle\\caches\\transforms-3\\5cfa801397a08c7b3f1bc71f74eb488f\\transformed\\core-1.12.0\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

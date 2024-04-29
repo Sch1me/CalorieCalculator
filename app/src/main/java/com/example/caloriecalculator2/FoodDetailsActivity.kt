@@ -1,20 +1,17 @@
 package com.example.caloriecalculator2
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
 import android.widget.Toast
-import androidx.lifecycle.viewmodel.CreationExtras
+import androidx.appcompat.app.AppCompatActivity
 import com.example.caloriecalculator2.databinding.ActivityFoodDetailsBinding
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.google.firebase.database.getValue
-import java.lang.Exception
 
 class FoodDetailsActivity : AppCompatActivity() {
     lateinit var binding: ActivityFoodDetailsBinding
