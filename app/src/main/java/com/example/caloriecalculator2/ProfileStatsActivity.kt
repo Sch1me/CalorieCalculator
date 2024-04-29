@@ -95,6 +95,5 @@ class ProfileStatsActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
     }
 }

@@ -9,7 +9,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/foodLajna"
-        android:backgroundTint="@color/prozirnoTamnije"
+        android:backgroundTint="@color/prozirno2"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
@@ -48,7 +48,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:textSize="20sp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:layout_margin="10dp"
                 android:gravity="center"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -57,7 +57,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/foodLajna2"
-        android:backgroundTint="@color/prozirnoTamnije"
+        android:backgroundTint="@color/prozirno2"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
@@ -97,7 +97,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:fontFamily="@font/linden_hill"
                 android:textSize="20sp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:layout_margin="10dp"
                 android:gravity="center"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -106,7 +106,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/foodLajna3"
-        android:backgroundTint="@color/prozirnoTamnije"
+        android:backgroundTint="@color/prozirno2"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
@@ -145,7 +145,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:textSize="20sp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:layout_margin="10dp"
                 android:gravity="center"/>
         </androidx.constraintlayout.widget.ConstraintLayout>

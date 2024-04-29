@@ -15,11 +15,15 @@ import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.getValue
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
+import com.bumptech.glide.annotation.GlideModule
+import com.bumptech.glide.module.AppGlideModule
+
 
 private val dataBase: DatabaseReference =
     FirebaseDatabase.getInstance("https://caloriecalculator2-2cb5c-default-rtdb.europe-west1.firebasedatabase.app/").getReference("Food").child("Ingredients")
 private val dataBaseIntake: DatabaseReference =
     FirebaseDatabase.getInstance("https://caloriecalculator2-2cb5c-default-rtdb.europe-west1.firebasedatabase.app/").getReference("CurrentIntake")
+
 
 private var calorieIntake : String = ""
 private var proteinIntake : String = ""
@@ -155,6 +159,18 @@ class FoodAdapter  (
             itemBinding.foodNameTextView.text=foodsModels[0].Name
             itemBinding.foodNameTextView2.text=foodsModels[1].Name
             itemBinding.foodNameTextView3.text=foodsModels[2].Name
+             val storageReference: StorageReference =
+                 FirebaseStorage.getInstance().getReference().child("foods/${foodsModels[0].Name}.jpg")
+            //GlideApp.with(this@ViewHolder).load(storageReference).into(itemBinding.foodImageView)
+
+            val storageReference2: StorageReference =
+                FirebaseStorage.getInstance().getReference().child("foods/${foodsModels[1].Name}.jpg")
+            //GlideApp.with(this@ViewHolder).load(storageReference2).into(itemBinding.foodImageView2)
+
+            val storageReference3: StorageReference =
+                FirebaseStorage.getInstance().getReference().child("foods/${foodsModels[2].Name}.jpg")
+            //GlideApp.with(this@ViewHolder).load(storageReference3).into(itemBinding.foodImageView3)
+
 
             //NAPRAVIT KOD ZA UVRSTAVANJE SLIKA
 
