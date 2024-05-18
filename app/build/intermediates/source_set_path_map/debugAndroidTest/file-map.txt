@@ -1,0 +1,6 @@
+com.example.caloriecalculator2.test.app-core-1.5.0-0 C:\Users\Šime\.gradle\caches\transforms-3\688a41ef29f54a196ad4831343ab6a84\transformed\core-1.5.0\res
+com.example.caloriecalculator2.test.app-annotation-experimental-1.4.0-1 C:\Users\Šime\.gradle\caches\transforms-3\f057bd6ce691260f88fada1332e03690\transformed\annotation-experimental-1.4.0\res
+com.example.caloriecalculator2.test.app-androidTest-2 C:\Users\Šime\StudioProjects\CalorieCalculator89\app\build\generated\res\resValues\androidTest\debug
+com.example.caloriecalculator2.test.app-mergeDebugAndroidTestResources-3 C:\Users\Šime\StudioProjects\CalorieCalculator89\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.caloriecalculator2.test.app-mergeDebugAndroidTestResources-4 C:\Users\Šime\StudioProjects\CalorieCalculator89\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.caloriecalculator2.test.app-merged_res-5 C:\Users\Šime\StudioProjects\CalorieCalculator89\app\build\intermediates\merged_res\debugAndroidTest

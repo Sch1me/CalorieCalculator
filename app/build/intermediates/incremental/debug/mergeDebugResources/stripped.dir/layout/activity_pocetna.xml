@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PocetnaActivity"
+    android:background="@drawable/background_pocetna_novije">
+
+    <ProgressBar
+        android:id="@+id/determinateBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progress="25"/>
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/bojaVrh"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="10dp"
+    android:backgroundTint="@color/prozirno2"
+    app:cardCornerRadius="40dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:backgroundTint="@color/prozirno">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pocetnaNaslovTxt"
+            android:textSize="40sp"
+            android:fontFamily="@font/linden_hill"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="135dp"
+            android:layout_marginEnd="135dp"
+            >
+        </TextView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/foodDetailsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/buttoniBoja"
+        android:text="FOOD DETAILS"
+        android:textColor="@color/textButtonColor"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginTop="55dp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bojaVrh"
+        android:backgroundTint="@color/prozirno2"
+        android:layout_marginBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/prozirno"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/calorieLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/prozirno"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                android:layout_marginHorizontal="10dp">
+
+                    <TextView
+                        android:id="@+id/calorieIntakeTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="7dp"
+                        android:fontFamily="@font/linden_hill"
+                        android:text=" Current calorie intake: "
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/calorieNumberTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="7dp"
+                        android:fontFamily="@font/linden_hill"
+                        android:text=" 0kcal / 3000kcal "
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/waterLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/prozirno"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/waterIntakeTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="7dp"
+                        android:fontFamily="@font/linden_hill"
+                        android:text=" Current water intake: "
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/waterConsumedTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="7dp"
+                        android:fontFamily="@font/linden_hill"
+                        android:text=" 0/50cl  "
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:layout_marginBottom="12dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/prozirno2">
+
+        <LinearLayout
+            android:id="@+id/bojaPod"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:background="@color/prozirno"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/view2"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:backgroundTint="@color/prozirno"
+                android:elevation="12dp"
+                app:cardCornerRadius="30dp">
+
+                <ImageView
+                    android:id="@+id/waterButtonIMG"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="2dp"
+                    app:srcCompat="@drawable/water_drop_logo" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/view1"
+                android:layout_width="53dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:backgroundTint="@color/prozirno"
+                android:elevation="12dp"
+                app:cardCornerRadius="40dp">
+
+                <ImageView
+                    android:id="@+id/foodButtonIMG"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="2.5dp"
+                    android:text="@string/foodBtn"
+                    app:srcCompat="@drawable/food_logo" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewHome"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="75dp"
+                android:backgroundTint="@color/prozirno"
+                android:elevation="12dp"
+                app:cardCornerRadius="40dp">
+
+                <ImageView
+                    android:id="@+id/profileButtonIMG"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="2.5dp"
+                    android:text="@string/profileBtn"
+                    app:srcCompat="@drawable/profile_logo" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/quotesTxt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/linden_hill"
+        android:gravity="center"
+        android:text="'Random Quote'"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        android:layout_marginTop="35dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
