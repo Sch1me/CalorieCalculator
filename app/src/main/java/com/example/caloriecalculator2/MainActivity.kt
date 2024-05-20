@@ -100,7 +100,7 @@ class MainActivity : AppCompatActivity() {
                     val a : List<StatsModel> = snapshot.children.map { dataSnapshot -> dataSnapshot.getValue(StatsModel::class.java)!! }
                     historyList.addAll(a)
                     velicinaListe=historyList.size / 3
-                    Toast.makeText(this@MainActivity,"Ocitalo je listu",Toast.LENGTH_SHORT).show()
+                 //   Toast.makeText(this@MainActivity,"Ocitalo je listu",Toast.LENGTH_SHORT).show()
 
                 }catch (E:Exception){
                     Toast.makeText(this@MainActivity,"GRESKA U HISTORY BAZI",Toast.LENGTH_LONG).show()

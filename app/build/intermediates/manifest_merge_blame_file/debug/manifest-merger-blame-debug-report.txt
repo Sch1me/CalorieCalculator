@@ -17,8 +17,8 @@
 12-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:5:5-77
 12-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:5:22-74
 13    <uses-permission android:name="android.permission.INTERNET" />
-13-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Šime\.gradle\caches\transforms-3\f2d3fa5c32b561adf31e43354c0b73d3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:25:5-67
-13-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Šime\.gradle\caches\transforms-3\f2d3fa5c32b561adf31e43354c0b73d3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:25:22-64
+13-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:7:5-66
+13-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:7:22-64
 14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 14-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Šime\.gradle\caches\transforms-3\f2d3fa5c32b561adf31e43354c0b73d3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:26:5-79
 14-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Šime\.gradle\caches\transforms-3\f2d3fa5c32b561adf31e43354c0b73d3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:26:22-76
@@ -38,85 +38,85 @@
 21-->[androidx.core:core:1.13.0] C:\Users\Šime\.gradle\caches\transforms-3\1631ae7f25c7dd665412349bdab1352c\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
 22
 23    <application
-23-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:8:5-48:19
+23-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:9:5-49:19
 24        android:allowBackup="true"
-24-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:9:9-35
+24-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:10:9-35
 25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 25-->[androidx.core:core:1.13.0] C:\Users\Šime\.gradle\caches\transforms-3\1631ae7f25c7dd665412349bdab1352c\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 26        android:dataExtractionRules="@xml/data_extraction_rules"
-26-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:10:9-65
+26-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:11:9-65
 27        android:debuggable="true"
 28        android:extractNativeLibs="false"
 29        android:fullBackupContent="@xml/backup_rules"
-29-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:11:9-54
+29-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:12:9-54
 30        android:icon="@drawable/app_logo"
-30-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:12:9-42
+30-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:13:9-42
 31        android:label="@string/app_name"
-31-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:13:9-41
+31-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:14:9-41
 32        android:roundIcon="@drawable/app_logo"
-32-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:14:9-47
+32-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:15:9-47
 33        android:supportsRtl="true"
-33-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:15:9-35
+33-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:16:9-35
 34        android:testOnly="true"
 35        android:theme="@style/Theme.CalorieCalculator2" >
-35-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:16:9-56
+35-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:17:9-56
 36        <activity
-36-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:18:9-20:40
+36-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:19:9-21:40
 37            android:name="com.example.caloriecalculator2.ProfileStatsActivity"
-37-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:19:13-49
+37-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:20:13-49
 38            android:exported="false" />
-38-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:20:13-37
+38-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:21:13-37
 39        <activity
-39-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:21:9-23:40
+39-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:22:9-24:40
 40            android:name="com.example.caloriecalculator2.FoodDetailsActivity"
-40-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:22:13-48
+40-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:23:13-48
 41            android:exported="false" />
-41-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:23:13-37
+41-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:24:13-37
 42        <activity
-42-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:24:9-26:40
+42-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:25:9-27:40
 43            android:name="com.example.caloriecalculator2.ProgressActivity"
-43-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:25:13-45
+43-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:26:13-45
 44            android:exported="false" />
-44-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:26:13-37
+44-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:27:13-37
 45        <activity
-45-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:27:9-29:40
+45-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:28:9-30:40
 46            android:name="com.example.caloriecalculator2.FoodActivity"
-46-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:28:13-41
+46-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:29:13-41
 47            android:exported="false" />
-47-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:29:13-37
+47-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:30:13-37
 48        <activity
-48-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:30:9-32:40
+48-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:31:9-33:40
 49            android:name="com.example.caloriecalculator2.WaterActivity"
-49-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:31:13-42
+49-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:32:13-42
 50            android:exported="false" />
-50-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:32:13-37
+50-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:33:13-37
 51        <activity
-51-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:33:9-35:40
+51-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:34:9-36:40
 52            android:name="com.example.caloriecalculator2.ProfileActivity"
-52-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:34:13-44
+52-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:35:13-44
 53            android:exported="false" />
-53-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:35:13-37
+53-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:36:13-37
 54        <activity
-54-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:36:9-38:40
+54-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:37:9-39:40
 55            android:name="com.example.caloriecalculator2.PocetnaActivity"
-55-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:37:13-44
+55-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:38:13-44
 56            android:exported="false" />
-56-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:38:13-37
+56-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:39:13-37
 57        <activity
-57-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:39:9-47:20
+57-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:40:9-48:20
 58            android:name="com.example.caloriecalculator2.MainActivity"
-58-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:40:13-41
+58-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:41:13-41
 59            android:exported="true" >
-59-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:41:13-36
+59-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:42:13-36
 60            <intent-filter>
-60-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:42:13-46:29
+60-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:43:13-47:29
 61                <action android:name="android.intent.action.MAIN" />
-61-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:43:17-69
-61-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:43:25-66
+61-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:44:17-69
+61-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:44:25-66
 62
 63                <category android:name="android.intent.category.LAUNCHER" />
-63-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:45:17-77
-63-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:45:27-74
+63-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:46:17-77
+63-->C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:46:27-74
 64            </intent-filter>
 65        </activity>
 66

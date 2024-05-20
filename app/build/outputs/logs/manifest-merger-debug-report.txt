@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:2:1-50:12
+ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:2:1-51:12
 MERGED from [androidx.databinding:databinding-adapters:8.0.1] C:\Users\Šime\.gradle\caches\transforms-3\53ca4bb11b62fd8da0828e2ec844e474\transformed\databinding-adapters-8.0.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-ktx:8.0.1] C:\Users\Šime\.gradle\caches\transforms-3\2f96b9d919e53c2bc09e9998ed3a50fb\transformed\databinding-ktx-8.0.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-runtime:8.0.1] C:\Users\Šime\.gradle\caches\transforms-3\87618210e126b08fb671b0cae5afaa27\transformed\databinding-runtime-8.0.1\AndroidManifest.xml:2:1-7:12
@@ -82,22 +82,22 @@ MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Šime\.gradle\cache
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Šime\.gradle\caches\transforms-3\34af6112a6497f808bb9e14ab4be7985\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Šime\.gradle\caches\transforms-3\a8f276e3b56fde14263c4bad47eb809c\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Šime\.gradle\caches\transforms-3\f057bd6ce691260f88fada1332e03690\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:2:1-51:12
 	package
 		INJECTED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:2:1-50:12
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:2:1-51:12
 		INJECTED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:2:1-50:12
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:2:1-51:12
 		INJECTED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:2:1-50:12
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:2:1-51:12
 		INJECTED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:2:11-69
@@ -105,8 +105,20 @@ uses-permission#android.permission.POST_NOTIFICATIONS
 ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:5:5-77
 	android:name
 		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:5:22-74
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:7:5-66
+MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\Šime\.gradle\caches\transforms-3\f2d3fa5c32b561adf31e43354c0b73d3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\Šime\.gradle\caches\transforms-3\f2d3fa5c32b561adf31e43354c0b73d3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-storage:20.3.0] C:\Users\Šime\.gradle\caches\transforms-3\fc3041e0e063f84556e629dce86176fe\transformed\firebase-storage-20.3.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-storage:20.3.0] C:\Users\Šime\.gradle\caches\transforms-3\fc3041e0e063f84556e629dce86176fe\transformed\firebase-storage-20.3.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-database:20.3.1] C:\Users\Šime\.gradle\caches\transforms-3\d90e550829f7d025e03ada7d67f28a10\transformed\firebase-database-20.3.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-database:20.3.1] C:\Users\Šime\.gradle\caches\transforms-3\d90e550829f7d025e03ada7d67f28a10\transformed\firebase-database-20.3.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Šime\.gradle\caches\transforms-3\a5fce8e5147a35dca09b278653d50435\transformed\recaptcha-18.4.0\AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Šime\.gradle\caches\transforms-3\a5fce8e5147a35dca09b278653d50435\transformed\recaptcha-18.4.0\AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:7:22-64
 application
-ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:8:5-48:19
+ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:9:5-49:19
 MERGED from [com.google.firebase:firebase-database-ktx:20.3.1] C:\Users\Šime\.gradle\caches\transforms-3\d38cf40fd7575c5311fe90a59a628eb7\transformed\firebase-database-ktx-20.3.1\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-database-ktx:20.3.1] C:\Users\Šime\.gradle\caches\transforms-3\d38cf40fd7575c5311fe90a59a628eb7\transformed\firebase-database-ktx-20.3.1\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Šime\.gradle\caches\transforms-3\de81c1ca9f6d179e281c9aae46d24c23\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
@@ -160,81 +172,81 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Šime\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] C:\Users\Šime\.gradle\caches\transforms-3\1631ae7f25c7dd665412349bdab1352c\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:13:9-41
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:14:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:12:9-54
 	android:roundIcon
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:14:9-47
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:15:9-47
 	tools:targetApi
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:17:9-29
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:18:9-29
 	android:icon
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:12:9-42
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:13:9-42
 	android:allowBackup
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:9:9-35
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:16:9-56
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:17:9-56
 	android:dataExtractionRules
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:10:9-65
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:11:9-65
 activity#com.example.caloriecalculator2.ProfileStatsActivity
-ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:18:9-20:40
+ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:19:9-21:40
 	android:exported
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:20:13-37
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:19:13-49
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:20:13-49
 activity#com.example.caloriecalculator2.FoodDetailsActivity
-ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:21:9-23:40
+ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:22:9-24:40
 	android:exported
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:23:13-37
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:22:13-48
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:23:13-48
 activity#com.example.caloriecalculator2.ProgressActivity
-ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:24:9-26:40
+ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:25:9-27:40
 	android:exported
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:26:13-37
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:25:13-45
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:26:13-45
 activity#com.example.caloriecalculator2.FoodActivity
-ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:27:9-29:40
+ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:28:9-30:40
 	android:exported
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:29:13-37
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:28:13-41
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:29:13-41
 activity#com.example.caloriecalculator2.WaterActivity
-ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:30:9-32:40
+ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:31:9-33:40
 	android:exported
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:32:13-37
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:33:13-37
 	android:name
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:31:13-42
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:32:13-42
 activity#com.example.caloriecalculator2.ProfileActivity
-ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:33:9-35:40
+ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:34:9-36:40
 	android:exported
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:35:13-37
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:36:13-37
 	android:name
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:34:13-44
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:35:13-44
 activity#com.example.caloriecalculator2.PocetnaActivity
-ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:36:9-38:40
+ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:37:9-39:40
 	android:exported
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:38:13-37
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:39:13-37
 	android:name
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:37:13-44
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:38:13-44
 activity#com.example.caloriecalculator2.MainActivity
-ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:39:9-47:20
+ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:40:9-48:20
 	android:exported
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:41:13-36
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:42:13-36
 	android:name
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:40:13-41
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:41:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:42:13-46:29
+ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:43:13-47:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:43:17-69
+ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:44:17-69
 	android:name
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:43:25-66
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:44:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:45:17-77
+ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:46:17-77
 	android:name
-		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:45:27-74
+		ADDED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml:46:27-74
 uses-sdk
 INJECTED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Šime\StudioProjects\CalorieCalculator89\app\src\main\AndroidManifest.xml
@@ -443,16 +455,6 @@ ADDED from [com.google.firebase:firebase-auth-ktx:22.3.1] C:\Users\Šime\.gradle
 		ADDED from [com.google.firebase:firebase-auth-ktx:22.3.1] C:\Users\Šime\.gradle\caches\transforms-3\55396e6f1289d6d1d055011c22bb0dd1\transformed\firebase-auth-ktx-22.3.1\AndroidManifest.xml:13:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth-ktx:22.3.1] C:\Users\Šime\.gradle\caches\transforms-3\55396e6f1289d6d1d055011c22bb0dd1\transformed\firebase-auth-ktx-22.3.1\AndroidManifest.xml:12:17-119
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\Šime\.gradle\caches\transforms-3\f2d3fa5c32b561adf31e43354c0b73d3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:25:5-67
-MERGED from [com.google.firebase:firebase-storage:20.3.0] C:\Users\Šime\.gradle\caches\transforms-3\fc3041e0e063f84556e629dce86176fe\transformed\firebase-storage-20.3.0\AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-storage:20.3.0] C:\Users\Šime\.gradle\caches\transforms-3\fc3041e0e063f84556e629dce86176fe\transformed\firebase-storage-20.3.0\AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-database:20.3.1] C:\Users\Šime\.gradle\caches\transforms-3\d90e550829f7d025e03ada7d67f28a10\transformed\firebase-database-20.3.1\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-database:20.3.1] C:\Users\Šime\.gradle\caches\transforms-3\d90e550829f7d025e03ada7d67f28a10\transformed\firebase-database-20.3.1\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Šime\.gradle\caches\transforms-3\a5fce8e5147a35dca09b278653d50435\transformed\recaptcha-18.4.0\AndroidManifest.xml:7:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Šime\.gradle\caches\transforms-3\a5fce8e5147a35dca09b278653d50435\transformed\recaptcha-18.4.0\AndroidManifest.xml:7:5-67
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\Šime\.gradle\caches\transforms-3\f2d3fa5c32b561adf31e43354c0b73d3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:25:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\Šime\.gradle\caches\transforms-3\f2d3fa5c32b561adf31e43354c0b73d3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-storage:20.3.0] C:\Users\Šime\.gradle\caches\transforms-3\fc3041e0e063f84556e629dce86176fe\transformed\firebase-storage-20.3.0\AndroidManifest.xml:23:5-79
